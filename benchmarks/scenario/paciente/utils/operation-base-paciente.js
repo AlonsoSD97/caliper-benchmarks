@@ -51,10 +51,6 @@ class OperationBasePaciente extends WorkloadModuleBase {
         this.assertConnectorType();
         //se verifica que los parametros esten en el archivo de configuracion mediante el metodo assertSetting
         // el metodo assertSetting hace uso del metodo hasOwnProperty para verificar que el parametro exista
-        this.assertSetting('initialMoney');
-        this.assertSetting('moneyToTransfer');
-        this.assertSetting('numberOfAccounts');
-
 
         //se asignan los parametros a variables para ser usadas en el resto del codigo
         // la variable this.roundArguments es un objeto que contiene los parametros del archivo de configuracion

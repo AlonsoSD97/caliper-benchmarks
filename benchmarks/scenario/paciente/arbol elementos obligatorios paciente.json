@@ -1,0 +1,89 @@
+{
+    "paciente": {
+    // informacion referida al sexo y genero
+    "indentidad de genero" : "obligatorio https://hl7chile.cl/fhir/ig/clcore/1.8.5/StructureDefinition-IdentidadDeGenero.html masculino , femenina, transgenero masculino, transgenero femenino, no binarie, otra, no revelado",
+    "sexo biologico": "obligatorio https://hl7chile.cl/fhir/ig/clcore/1.8.5/StructureDefinition-SexoBiologico.html https://hl7chile.cl/fhir/ig/clcore/1.8.5/StructureDefinition-IdentidadDeGenero.html male, female, Other, Unknown",
+    // informacion sobre la nacionalidad datos del tipo codeablecooncept
+    "nacionalidad": {   
+        "coding": {
+                "system": " https://hl7chile.cl/fhir/ig/clcore/1.8.5/StructureDefinition-Nacionalidad.html",
+                "code": "string",
+                "display": "string"
+            }
+        },
+    "identifier": {
+        "use": "string mandatory 	usual | official | temp | secondary | old (If known) ",
+        "type": {
+            "paises": "string mandatory",
+            "coding": {
+                "system": "string mandatory ",
+                "code": "string mandatory",
+                "display": "string mandatory"
+            },
+            "text": "string"
+        }
+    },
+    "names" :{
+        "NombreOficial": {
+            "use": "string",
+            "family": {
+                "segundoApellido": "string",
+            },
+            "given": "string",
+        },
+        "NombreSocial": {
+            "use": "string",
+            "given": "string",
+        }
+
+    },
+ 
+
+    "Telecom": {
+        "use": "string mandatory  home | work | temp | old | mobile - purpose of this contact point",
+        "system": "string mandatory  phone | fax | email | pager | url | sms | other",
+        "value": "string mandatory"
+    },  
+    "Gender": "string mandatory para compatibilidad male female other unknown",
+    "birthDate": "string mandatory",
+    "deceased": {
+        "boolean": "boolean opcional",
+        "dateTime": "string opcional"
+    },
+    "contact": {
+        "id": "string opcional para refernciar internalmente",
+        "relationship": {
+            "id": "string opcional para refernciar internalmente",
+            "coding": {
+                "system": "string",
+                "code": "string",
+                "display": "string"
+            },
+            "name":{
+                "use": "string",
+                "family": "string",
+                "given": "string"
+            },
+    "comunication": {
+        "id": "string opcional para refernciar internalmente",
+        "language": {
+            "id": "string opcional para refernciar internalmente",
+            "coding": {
+                "system": "string",
+                "code": "string",
+                "display": "string"
+            },
+        },
+        "generalPractitioner": {
+            "id": "string opcional para refernciar internalmente",
+            "reference": "string url de referencia para el medico ",
+            "display": "string"
+    
+            
+}
+
+}
+}
+
+
+    
