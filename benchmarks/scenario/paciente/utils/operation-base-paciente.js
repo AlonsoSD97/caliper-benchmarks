@@ -60,6 +60,7 @@ class OperationBasePaciente extends WorkloadModuleBase {
         //se crea una instancia de la clase SimpleState
         
         this.simpleState = this.createSimpleState();
+        this.pacienteData = this.createPacienteData();
     }
 
     /**
@@ -73,6 +74,14 @@ class OperationBasePaciente extends WorkloadModuleBase {
         throw new Error('Simple workload error: "createSimpleState" must be overridden in derived classes');
     }
 
+    /**
+     * Creates the data for a paciente.
+     * This method must be overridden in derived classes.
+     * @throws {Error} Throws an error indicating that "createPacienteData" must be overridden.
+     */
+    createPacienteData() {
+        throw new Error('Simple workload error: "createPacienteData" must be overridden in derived classes');
+    }
     /**
      * Assert that the used connector type is supported. Only Fabric is supported currently.
      * @protected

@@ -117,14 +117,14 @@ const listaRelaciones = ['padre', 'hijo', 'cónyuge', 'pareja', 'hermano/a', 'am
 const lenguageList = ['es', 'en', 'fr', 'de', 'it' , 'pt', 'zh'];
 
 /**
- * Class for managing simple account states.
+ * Class for Paciente state management.
  */
 class PacienteData  {
 
     /**
      * Initializes the instance.
      */
-    constructor(workerIndex, initialMoney, moneyToTransfer, accounts = 0) {
+    constructor() {
         this.patientData = {
             identidadDeGenero : genderList[Math.floor(Math.random() * genderList.length)],
             sexoBiologico : sexList[Math.floor(Math.random() * sexList.length)],
@@ -183,8 +183,7 @@ class PacienteData  {
             }
             
             }
-        this.ethereumAddress= this._generateRandomAccount().address;
-        this.ethereumPrivateKey= this._generateRandomAccount().privateKey;        
+        this.ethereumAccount= this._generateRandomAccount();    
         };        
 
     //seccion de metodos de la clase    
@@ -280,6 +279,18 @@ class PacienteData  {
         }
 
         return result;
+    }
+    getPatientData() {
+        return this.patientData;
+    }
+    getEthereumAccount() {
+        return this.ethereumAccount;
+    }
+    getPatient(){
+        return{
+            patient: this.patientData,
+            ethereumAccount: this.ethereumAccount
+        }
     }
 
 }
