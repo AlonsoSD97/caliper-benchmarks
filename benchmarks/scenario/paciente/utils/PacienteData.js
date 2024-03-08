@@ -295,4 +295,5 @@ class PacienteData  {
 
 }
 
+
 module.exports = PacienteData;
