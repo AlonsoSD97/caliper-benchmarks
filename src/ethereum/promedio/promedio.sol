@@ -10,10 +10,8 @@ contract promedios {
     mapping(uint => Alumno) public alumnos;
     mapping(string => mapping(uint => Alumno)) public profesor;
 
-    function actualizar_promedio (uint _index, bytes memory _alumnoJson) public {
-        (string memory name, int256 edad) = abi.decode(_alumnoJson, (string, int256));
-    
-        alumnos[_index] = Alumno(name, edad);
+    function actualizar_promedio (uint _index, Alumno memory _alumno ) public {
+     alumnos[_index] = _alumno;
 }
 
 

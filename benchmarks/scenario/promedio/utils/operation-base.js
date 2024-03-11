@@ -43,13 +43,6 @@ class OperationBase extends WorkloadModuleBase {
         await super.initializeWorkloadModule(workerIndex, totalWorkers, roundIndex, roundArguments, sutAdapter, sutContext);
 
         this.assertConnectorType();
-        this.assertSetting('initialMoney');
-        this.assertSetting('moneyToTransfer');
-        this.assertSetting('numberOfAccounts');
-
-        this.initialMoney = this.roundArguments.initialMoney;
-        this.moneyToTransfer = this.roundArguments.moneyToTransfer;
-        this.numberOfAccounts = this.roundArguments.numberOfAccounts;
         this.simpleState = this.createSimpleState();
     }
 
@@ -73,16 +66,7 @@ class OperationBase extends WorkloadModuleBase {
         }
     }
 
-    /**
-     * Assert that a given setting is present among the arguments.
-     * @param {string} settingName The name of the setting.
-     * @protected
-     */
-    assertSetting(settingName) {
-        if(!this.roundArguments.hasOwnProperty(settingName)) {
-            throw new Error(`Simple workload error: module setting "${settingName}" is missing from the benchmark configuration file`);
-        }
-    }
+
 
     /**
      * Assemble a connector-specific request from the business parameters.
@@ -122,7 +106,29 @@ class OperationBase extends WorkloadModuleBase {
     }
 
     /**
+     * Extracts all values from an object recursively.
+     * @param {object} object - The object to extract values from.
+     * @returns {Array} - An array containing all the values extracted from the object.
+     */
+    extractValuesObject(obj) {
+        let result = [];
+
+        for (let key in obj) {
+            if (typeof obj[key] === 'object') {
+                // Si el valor es un objeto, llamamos recursivamente a extractValues
+                result = result.concat(this.extractValuesObject(obj[key]));
+            } else {
+                // Si el valor no es un objeto, lo agregamos al resultado
+                result.push(obj[key]);
+            }
+        }
+
+        return result;
+    }
+
+    /**
      * Assemble a Ethereum-specific request from the business parameters.
+     * @param {string} contract The name of the contract to invoke.
      * @param {string} operation The name of the operation to invoke.
      * @param {object} args The object containing the arguments.
      * @return {object} The Ethereum-specific request.
@@ -133,7 +139,7 @@ class OperationBase extends WorkloadModuleBase {
         return {
             contract: contract,
             verb: operation,
-            args: Object.keys(args).map(k => args[k]),
+            args: this.extractValuesObject(args),
             readOnly: query
         };
     }

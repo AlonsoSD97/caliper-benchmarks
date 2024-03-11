@@ -15,12 +15,9 @@
         "transactionConfirmationBlocks": 2,
         "contracts": {
             "simple": {
-                "path": "./src/ethereum/simple/simple.json",
+                "path": "./src/ethereum/promedio/promedios.json",
                 "estimateGas": true,
-                "gas": {
-                    "query": 100000,
-                    "transfer": 70000
-                }
+                "gas": 1000000
             }
         }
     }

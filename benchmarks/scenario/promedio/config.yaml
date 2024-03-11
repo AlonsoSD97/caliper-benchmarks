@@ -1,0 +1,16 @@
+test:
+  name: promedios
+  description: "Benchmark for the promedios smart contract"
+  workers:
+    number: 1
+  rounds:
+    - label: actualizar_promedio
+      description: "Benchmark for updating the promedio of an alumno"
+      txNumber: 100
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 25
+      workload:
+        module: benchmarks/scenario/promedio/open_copy.js
+        

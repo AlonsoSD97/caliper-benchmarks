@@ -19,7 +19,7 @@ const OperationBase = require('./utils/operation-base');
 /**
  * Workload module for initializing the SUT with various accounts.
  */
-class Open extends OperationBase {
+class Promedio extends OperationBase {
 
     /**
      * Initializes the parameters of the workload.
@@ -32,9 +32,30 @@ class Open extends OperationBase {
      * Assemble TXs for opening new accounts.
      */
     async submitTransaction() {
-        let createArgs = this.simpleState.getOpenAccountArguments();
-        await this.sutAdapter.sendRequests(this.createConnectorRequest('open', createArgs));
+        let Alumno = {
+            nombre: 'Juan',
+            edad: 20,
+        }
+        let args = {
+            index: Math.floor(Math.random() * 10),
+            Alumno,
+        };
+
+        
+        await this.sutAdapter.sendRequests(this.createConnectorRequest('promedio','actualizar_promedio' , args));
     }
+    
+    createSimpleState() {
+        return {
+            getOpenAccountArguments: () => {
+                return {
+                    nombre: 'Juan',
+                    edad: 20,
+                };
+            },
+        };
+    }
+
 }
 
 /**
@@ -42,7 +63,7 @@ class Open extends OperationBase {
  * @return {WorkloadModuleInterface}
  */
 function createWorkloadModule() {
-    return new Open();
+    return new Promedio();
 }
 
 module.exports.createWorkloadModule = createWorkloadModule;
