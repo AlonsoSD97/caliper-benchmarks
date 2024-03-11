@@ -31,18 +31,26 @@ class Promedio extends OperationBase {
     /**
      * Assemble TXs for opening new accounts.
      */
+    _generateRandomString(length) {
+        let result = '';
+        let characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+        let charactersLength = characters.length;
+        for (let i = 0; i < length; i++) {
+            result += characters.charAt(Math.floor(Math.random() * charactersLength));
+        }
+        return result;
+    }
     async submitTransaction() {
         let Alumno = {
-            nombre: 'Juan',
-            edad: 20,
+            nombre: this._generateRandomString(10),
+            edad: Math.floor(Math.random() * 100) + 1,
         }
         let args = {
             index: Math.floor(Math.random() * 10),
-            Alumno,
+            Alumno: Alumno
         };
-
-        
-        await this.sutAdapter.sendRequests(this.createConnectorRequest('promedio','actualizar_promedio' , args));
+        console.log('input',JSON.stringify(args));
+        await this.sutAdapter.sendRequests(this._createEthereumConnectorRequest('promedios','actualizar_promedio' , args));
     }
     
     createSimpleState() {

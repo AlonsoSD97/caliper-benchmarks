@@ -126,6 +126,23 @@ class OperationBase extends WorkloadModuleBase {
         return result;
     }
 
+    extractValuesObjectAnidated(obj) {
+        let result = [];
+
+        for (let key in obj) {
+            if (typeof obj[key] === 'object' && obj[key] !== null) {
+            // If the value is an object, we recursively call extractValuesObjectAnidated
+            let nestedObj = this.extractValuesObjectAnidated(obj[key]);
+            result = result.concat([nestedObj]);
+            } else {
+            // If the value is not an object, we add it to the result
+            result.push(obj[key]);
+            }
+        }
+
+        return result;
+        }
+
     /**
      * Assemble a Ethereum-specific request from the business parameters.
      * @param {string} contract The name of the contract to invoke.
@@ -139,7 +156,7 @@ class OperationBase extends WorkloadModuleBase {
         return {
             contract: contract,
             verb: operation,
-            args: this.extractValuesObject(args),
+            args: this.extractValuesObjectAnidated(args),
             readOnly: query
         };
     }

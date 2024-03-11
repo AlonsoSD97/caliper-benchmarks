@@ -15,8 +15,8 @@
         "contracts": {
             "promedio": {
                 "path": "/home/alonso/quickstart besu v2/caliper-benchmarks/src/ethereum/promedio/promedios.json",
-                "estimateGas": true,
-                "gas": 4700000 
+                "estimateGas": false,
+                "gas": 1000 
             }
         }
     }
