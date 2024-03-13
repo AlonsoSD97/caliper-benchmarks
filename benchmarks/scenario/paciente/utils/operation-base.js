@@ -54,15 +54,6 @@ class OperationBase extends WorkloadModuleBase {
     }
 
     /**
-     * Performs the operation mode-specific initialization.
-     * @return {SimpleState} the initialized SimpleState instance.
-     * @protected
-     */
-    createSimpleState() {
-        throw new Error('Simple workload error: "createSimpleState" must be overridden in derived classes');
-    }
-
-    /**
      * Assert that the used connector type is supported. Only Fabric is supported currently.
      * @protected
      */
