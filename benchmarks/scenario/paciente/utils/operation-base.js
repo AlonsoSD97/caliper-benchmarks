@@ -47,6 +47,14 @@ class OperationBase extends WorkloadModuleBase {
     }
 
     /**
+     * Performs the operation mode-specific initialization.
+     * @return {SimpleState} the initialized SimpleState instance.
+     * @protected
+     */
+    createSimpleState() {      
+    }
+
+    /**
      * Assert that the used connector type is supported. Only Fabric is supported currently.
      * @protected
      */
@@ -147,7 +155,7 @@ class OperationBase extends WorkloadModuleBase {
         return {
             contract: contract,
             verb: operation,
-            args: this.extractValuesObjectAnidated(args),
+            args: [this.extractValuesObjectAnidated(args)],
             readOnly: query
         };
     }

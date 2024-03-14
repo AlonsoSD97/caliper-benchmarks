@@ -43,12 +43,12 @@ class Promedio extends OperationBase {
     }
     async submitTransaction() {
         let args  = this.createPaciente();
-        console.log('input',JSON.stringify(args));
+        console.log(this._createEthereumConnectorRequest('paciente','updatePatientData' , args));
         await this.sutAdapter.sendRequests(this._createEthereumConnectorRequest('paciente','updatePatientData' , args));
     }
     
     createPaciente() {
-        paciente = new Paciente();
+        const paciente = new Paciente();
         return paciente.getPatientData();
     }
 

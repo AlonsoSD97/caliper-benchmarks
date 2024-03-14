@@ -1,1 +1,1337 @@
-[["6","no revelado","https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSIdentidaddeGenero"],["unknown","Unknown","Unknown"],["https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",[["152","Chile","https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"]]],["secondary",[["152","Chile","https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"],["01","\thttps://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador","RUN"]],"96596081-3"],["official",["DyFQmZDKxK"],"felZuQmmNJ"],["usual","TTxNkTCaaa"],[["fax","fax","http://hl7.org/fhir/contact-point-system"],"myuZFBquHZ",["móvil","móvil","http://hl7.org/fhir/contact-point-use"]],"1997-11-7",[["276","Alemania","https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"],"nRShsEUkRL","grZhxMycmZ","jFXXDXfQyF","223"],["88654557-6",["E","Employer","null"],["usual",["qHcOeKAJxc"],"WQnmrffMWV"]],[[["fr-CH","French","https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoslenguaje"]]],["70232079-8","Practitioner/reference","ypQmCJzLnc"]]
+[["4","No binarie","https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSIdentidaddeGenero"],["other","Other","Other"],["https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",[["316","Estados Unidos","https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"]]],["usual",[["316","Estados Unidos","https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"],["01","\thttps://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador","RUN"]],"55511806-6"],["official",["cxcGOAHSaS"],"kFFEKcUmPv"],["usual","rAPkolQHei"],[["email","email","http://hl7.org/fhir/contact-point-system"],"kEaPqONuPu",["trabajo","trabajo","http://hl7.org/fhir/contact-point-use"]],"1971-8-11",[["276","Alemania","https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"],"IGvEJffEUA","QWGWYMksDf","fNkdaDwtHq","[object Undefined]"],["91634421-K",["N","Next-of-Kin",""],["usual",["aLpSxvFhDn"],"fnMfTujTUl"]],[[["cs-CZ","Czech","https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoslenguaje"]]],["47701004-0","Practitioner/reference","bCpOPEnqQk"]]
+
+[
+	{
+		"inputs": [
+			{
+				"components": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "code",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "display",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "system",
+								"type": "string"
+							}
+						],
+						"internalType": "struct Code",
+						"name": "identidadDeGenero",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "code",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "display",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "definition",
+								"type": "string"
+							}
+						],
+						"internalType": "struct Coding",
+						"name": "sexoBiologico",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "url",
+								"type": "string"
+							},
+							{
+								"components": [
+									{
+										"components": [
+											{
+												"internalType": "string",
+												"name": "code",
+												"type": "string"
+											},
+											{
+												"internalType": "string",
+												"name": "display",
+												"type": "string"
+											},
+											{
+												"internalType": "string",
+												"name": "system",
+												"type": "string"
+											}
+										],
+										"internalType": "struct Code",
+										"name": "coding",
+										"type": "tuple"
+									}
+								],
+								"internalType": "struct Value",
+								"name": "Value",
+								"type": "tuple"
+							}
+						],
+						"internalType": "struct Nacionalidad",
+						"name": "nacionalidad",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "use",
+								"type": "string"
+							},
+							{
+								"components": [
+									{
+										"components": [
+											{
+												"internalType": "string",
+												"name": "code",
+												"type": "string"
+											},
+											{
+												"internalType": "string",
+												"name": "display",
+												"type": "string"
+											},
+											{
+												"internalType": "string",
+												"name": "definition",
+												"type": "string"
+											}
+										],
+										"internalType": "struct Coding",
+										"name": "paises",
+										"type": "tuple"
+									},
+									{
+										"components": [
+											{
+												"internalType": "string",
+												"name": "code",
+												"type": "string"
+											},
+											{
+												"internalType": "string",
+												"name": "display",
+												"type": "string"
+											},
+											{
+												"internalType": "string",
+												"name": "definition",
+												"type": "string"
+											}
+										],
+										"internalType": "struct Coding",
+										"name": "coding",
+										"type": "tuple"
+									}
+								],
+								"internalType": "struct Type",
+								"name": "paises",
+								"type": "tuple"
+							},
+							{
+								"internalType": "string",
+								"name": "value",
+								"type": "string"
+							}
+						],
+						"internalType": "struct Identifier",
+						"name": "identifier",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "use",
+								"type": "string"
+							},
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "segundoApellido",
+										"type": "string"
+									}
+								],
+								"internalType": "struct Family",
+								"name": "family",
+								"type": "tuple"
+							},
+							{
+								"internalType": "string",
+								"name": "given",
+								"type": "string"
+							}
+						],
+						"internalType": "struct NombreOficial",
+						"name": "nombreOficial",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "use",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "given",
+								"type": "string"
+							}
+						],
+						"internalType": "struct NombreSocial",
+						"name": "nombreSocial",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "code",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "display",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "system",
+										"type": "string"
+									}
+								],
+								"internalType": "struct Code",
+								"name": "system",
+								"type": "tuple"
+							},
+							{
+								"internalType": "string",
+								"name": "value",
+								"type": "string"
+							},
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "code",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "display",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "system",
+										"type": "string"
+									}
+								],
+								"internalType": "struct Code",
+								"name": "use",
+								"type": "tuple"
+							}
+						],
+						"internalType": "struct Telecom",
+						"name": "telecom",
+						"type": "tuple"
+					},
+					{
+						"internalType": "string",
+						"name": "birthDate",
+						"type": "string"
+					},
+					{
+						"components": [
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "code",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "display",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "system",
+										"type": "string"
+									}
+								],
+								"internalType": "struct Code",
+								"name": "country",
+								"type": "tuple"
+							},
+							{
+								"internalType": "string",
+								"name": "city",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "street",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "postalCode",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "number",
+								"type": "string"
+							}
+						],
+						"internalType": "struct PatientAddress",
+						"name": "patientAddress",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "IdContacto",
+								"type": "string"
+							},
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "code",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "display",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "definition",
+										"type": "string"
+									}
+								],
+								"internalType": "struct Coding",
+								"name": "relationship",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "use",
+										"type": "string"
+									},
+									{
+										"components": [
+											{
+												"internalType": "string",
+												"name": "segundoApellido",
+												"type": "string"
+											}
+										],
+										"internalType": "struct Family",
+										"name": "family",
+										"type": "tuple"
+									},
+									{
+										"internalType": "string",
+										"name": "given",
+										"type": "string"
+									}
+								],
+								"internalType": "struct Name",
+								"name": "name",
+								"type": "tuple"
+							}
+						],
+						"internalType": "struct Contact",
+						"name": "contact",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"components": [
+									{
+										"components": [
+											{
+												"internalType": "string",
+												"name": "code",
+												"type": "string"
+											},
+											{
+												"internalType": "string",
+												"name": "display",
+												"type": "string"
+											},
+											{
+												"internalType": "string",
+												"name": "definition",
+												"type": "string"
+											}
+										],
+										"internalType": "struct Coding",
+										"name": "coding",
+										"type": "tuple"
+									}
+								],
+								"internalType": "struct Lenguage",
+								"name": "lenguage",
+								"type": "tuple"
+							}
+						],
+						"internalType": "struct Communication",
+						"name": "communication",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "id",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "Reference",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "display",
+								"type": "string"
+							}
+						],
+						"internalType": "struct GeneralPractitioner",
+						"name": "generalPractitioner",
+						"type": "tuple"
+					}
+				],
+				"internalType": "struct patientData",
+				"name": "_patientData",
+				"type": "tuple"
+			}
+		],
+		"name": "updatePatientData",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "pacientes",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "code",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "display",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "system",
+						"type": "string"
+					}
+				],
+				"internalType": "struct Code",
+				"name": "identidadDeGenero",
+				"type": "tuple"
+			},
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "code",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "display",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "definition",
+						"type": "string"
+					}
+				],
+				"internalType": "struct Coding",
+				"name": "sexoBiologico",
+				"type": "tuple"
+			},
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "url",
+						"type": "string"
+					},
+					{
+						"components": [
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "code",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "display",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "system",
+										"type": "string"
+									}
+								],
+								"internalType": "struct Code",
+								"name": "coding",
+								"type": "tuple"
+							}
+						],
+						"internalType": "struct Value",
+						"name": "Value",
+						"type": "tuple"
+					}
+				],
+				"internalType": "struct Nacionalidad",
+				"name": "nacionalidad",
+				"type": "tuple"
+			},
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "use",
+						"type": "string"
+					},
+					{
+						"components": [
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "code",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "display",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "definition",
+										"type": "string"
+									}
+								],
+								"internalType": "struct Coding",
+								"name": "paises",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "code",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "display",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "definition",
+										"type": "string"
+									}
+								],
+								"internalType": "struct Coding",
+								"name": "coding",
+								"type": "tuple"
+							}
+						],
+						"internalType": "struct Type",
+						"name": "paises",
+						"type": "tuple"
+					},
+					{
+						"internalType": "string",
+						"name": "value",
+						"type": "string"
+					}
+				],
+				"internalType": "struct Identifier",
+				"name": "identifier",
+				"type": "tuple"
+			},
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "use",
+						"type": "string"
+					},
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "segundoApellido",
+								"type": "string"
+							}
+						],
+						"internalType": "struct Family",
+						"name": "family",
+						"type": "tuple"
+					},
+					{
+						"internalType": "string",
+						"name": "given",
+						"type": "string"
+					}
+				],
+				"internalType": "struct NombreOficial",
+				"name": "nombreOficial",
+				"type": "tuple"
+			},
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "use",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "given",
+						"type": "string"
+					}
+				],
+				"internalType": "struct NombreSocial",
+				"name": "nombreSocial",
+				"type": "tuple"
+			},
+			{
+				"components": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "code",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "display",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "system",
+								"type": "string"
+							}
+						],
+						"internalType": "struct Code",
+						"name": "system",
+						"type": "tuple"
+					},
+					{
+						"internalType": "string",
+						"name": "value",
+						"type": "string"
+					},
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "code",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "display",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "system",
+								"type": "string"
+							}
+						],
+						"internalType": "struct Code",
+						"name": "use",
+						"type": "tuple"
+					}
+				],
+				"internalType": "struct Telecom",
+				"name": "telecom",
+				"type": "tuple"
+			},
+			{
+				"internalType": "string",
+				"name": "birthDate",
+				"type": "string"
+			},
+			{
+				"components": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "code",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "display",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "system",
+								"type": "string"
+							}
+						],
+						"internalType": "struct Code",
+						"name": "country",
+						"type": "tuple"
+					},
+					{
+						"internalType": "string",
+						"name": "city",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "street",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "postalCode",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "number",
+						"type": "string"
+					}
+				],
+				"internalType": "struct PatientAddress",
+				"name": "patientAddress",
+				"type": "tuple"
+			},
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "IdContacto",
+						"type": "string"
+					},
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "code",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "display",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "definition",
+								"type": "string"
+							}
+						],
+						"internalType": "struct Coding",
+						"name": "relationship",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "use",
+								"type": "string"
+							},
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "segundoApellido",
+										"type": "string"
+									}
+								],
+								"internalType": "struct Family",
+								"name": "family",
+								"type": "tuple"
+							},
+							{
+								"internalType": "string",
+								"name": "given",
+								"type": "string"
+							}
+						],
+						"internalType": "struct Name",
+						"name": "name",
+						"type": "tuple"
+					}
+				],
+				"internalType": "struct Contact",
+				"name": "contact",
+				"type": "tuple"
+			},
+			{
+				"components": [
+					{
+						"components": [
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "code",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "display",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "definition",
+										"type": "string"
+									}
+								],
+								"internalType": "struct Coding",
+								"name": "coding",
+								"type": "tuple"
+							}
+						],
+						"internalType": "struct Lenguage",
+						"name": "lenguage",
+						"type": "tuple"
+					}
+				],
+				"internalType": "struct Communication",
+				"name": "communication",
+				"type": "tuple"
+			},
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "id",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "Reference",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "display",
+						"type": "string"
+					}
+				],
+				"internalType": "struct GeneralPractitioner",
+				"name": "generalPractitioner",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "patientDataToAddress",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "code",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "display",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "system",
+						"type": "string"
+					}
+				],
+				"internalType": "struct Code",
+				"name": "identidadDeGenero",
+				"type": "tuple"
+			},
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "code",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "display",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "definition",
+						"type": "string"
+					}
+				],
+				"internalType": "struct Coding",
+				"name": "sexoBiologico",
+				"type": "tuple"
+			},
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "url",
+						"type": "string"
+					},
+					{
+						"components": [
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "code",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "display",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "system",
+										"type": "string"
+									}
+								],
+								"internalType": "struct Code",
+								"name": "coding",
+								"type": "tuple"
+							}
+						],
+						"internalType": "struct Value",
+						"name": "Value",
+						"type": "tuple"
+					}
+				],
+				"internalType": "struct Nacionalidad",
+				"name": "nacionalidad",
+				"type": "tuple"
+			},
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "use",
+						"type": "string"
+					},
+					{
+						"components": [
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "code",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "display",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "definition",
+										"type": "string"
+									}
+								],
+								"internalType": "struct Coding",
+								"name": "paises",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "code",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "display",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "definition",
+										"type": "string"
+									}
+								],
+								"internalType": "struct Coding",
+								"name": "coding",
+								"type": "tuple"
+							}
+						],
+						"internalType": "struct Type",
+						"name": "paises",
+						"type": "tuple"
+					},
+					{
+						"internalType": "string",
+						"name": "value",
+						"type": "string"
+					}
+				],
+				"internalType": "struct Identifier",
+				"name": "identifier",
+				"type": "tuple"
+			},
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "use",
+						"type": "string"
+					},
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "segundoApellido",
+								"type": "string"
+							}
+						],
+						"internalType": "struct Family",
+						"name": "family",
+						"type": "tuple"
+					},
+					{
+						"internalType": "string",
+						"name": "given",
+						"type": "string"
+					}
+				],
+				"internalType": "struct NombreOficial",
+				"name": "nombreOficial",
+				"type": "tuple"
+			},
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "use",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "given",
+						"type": "string"
+					}
+				],
+				"internalType": "struct NombreSocial",
+				"name": "nombreSocial",
+				"type": "tuple"
+			},
+			{
+				"components": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "code",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "display",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "system",
+								"type": "string"
+							}
+						],
+						"internalType": "struct Code",
+						"name": "system",
+						"type": "tuple"
+					},
+					{
+						"internalType": "string",
+						"name": "value",
+						"type": "string"
+					},
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "code",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "display",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "system",
+								"type": "string"
+							}
+						],
+						"internalType": "struct Code",
+						"name": "use",
+						"type": "tuple"
+					}
+				],
+				"internalType": "struct Telecom",
+				"name": "telecom",
+				"type": "tuple"
+			},
+			{
+				"internalType": "string",
+				"name": "birthDate",
+				"type": "string"
+			},
+			{
+				"components": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "code",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "display",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "system",
+								"type": "string"
+							}
+						],
+						"internalType": "struct Code",
+						"name": "country",
+						"type": "tuple"
+					},
+					{
+						"internalType": "string",
+						"name": "city",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "street",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "postalCode",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "number",
+						"type": "string"
+					}
+				],
+				"internalType": "struct PatientAddress",
+				"name": "patientAddress",
+				"type": "tuple"
+			},
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "IdContacto",
+						"type": "string"
+					},
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "code",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "display",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "definition",
+								"type": "string"
+							}
+						],
+						"internalType": "struct Coding",
+						"name": "relationship",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "use",
+								"type": "string"
+							},
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "segundoApellido",
+										"type": "string"
+									}
+								],
+								"internalType": "struct Family",
+								"name": "family",
+								"type": "tuple"
+							},
+							{
+								"internalType": "string",
+								"name": "given",
+								"type": "string"
+							}
+						],
+						"internalType": "struct Name",
+						"name": "name",
+						"type": "tuple"
+					}
+				],
+				"internalType": "struct Contact",
+				"name": "contact",
+				"type": "tuple"
+			},
+			{
+				"components": [
+					{
+						"components": [
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "code",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "display",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "definition",
+										"type": "string"
+									}
+								],
+								"internalType": "struct Coding",
+								"name": "coding",
+								"type": "tuple"
+							}
+						],
+						"internalType": "struct Lenguage",
+						"name": "lenguage",
+						"type": "tuple"
+					}
+				],
+				"internalType": "struct Communication",
+				"name": "communication",
+				"type": "tuple"
+			},
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "id",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "Reference",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "display",
+						"type": "string"
+					}
+				],
+				"internalType": "struct GeneralPractitioner",
+				"name": "generalPractitioner",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

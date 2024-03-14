@@ -6,7 +6,7 @@
         "url": "ws://localhost:7545",
         "contractDeployerAddress": "0x1fE081B6ea6831f7f79Ca80181e72D594c94a9CA",
         "contractDeployerAddressPrivateKey": "0xe18a974bbf03ff1ce05944e3799c140f279104149d3cbcbc91c22d55cf0e2688",
-        "fromAddress": "00x1fE081B6ea6831f7f79Ca80181e72D594c94a9CA",
+        "fromAddress": "0x1fE081B6ea6831f7f79Ca80181e72D594c94a9CA",
         "fromAddressPrivatekey": "0xe18a974bbf03ff1ce05944e3799c140f279104149d3cbcbc91c22d55cf0e2688",
         "transactionConfirmationBlocks": 2,
         "contracts": {
