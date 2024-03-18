@@ -1,0 +1,36 @@
+---
+- name: Install Besu
+  hosts: besu-hosts
+  roles:
+    - hyperledger_besu
+    - name: Install Besu
+      hosts: all
+      tasks:
+        - name: Install Java
+          apt:
+            name: openjdk-11-jdk
+            state: present
+
+        - name: Install Besu
+          shell: |
+            curl -L https://dl.bintray.com/hyperledger-org/besu-repo/besu-1.7.2.tar.gz -o besu.tar.gz
+            tar -xzf besu.tar.gz
+            mv besu-1.7.2 /opt/besu
+          args:
+            creates: /opt/besu
+
+        - name: Configure Besu
+          template:
+            src: besu-config.yaml.j2
+            dest: /opt/besu/config.yaml
+          notify: Restart Besu
+
+        - name: Start Besu
+          command: /opt/besu/bin/besu --config-file=/opt/besu/config.yaml
+          async: 0
+          poll: 0
+          become: yes
+
+      handlers:
+        - name: Restart Besu
+          command: systemctl restart besu.service

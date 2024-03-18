@@ -1,6 +1,6 @@
 {
     "caliper": {
-        "blockchain": "ethereum"
+        "blockchain": "besu"
     },
     "ethereum": {
         "url": "ws://localhost:7545",

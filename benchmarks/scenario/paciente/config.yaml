@@ -6,11 +6,11 @@ test:
   rounds:
     - label: añadir_paciente
       description: "Benchmark para actualizar datos de un paciente"
-      txNumber: 300
+      txNumber: 100
       rateControl:
         type: fixed-rate
         opts:
-          tps: 70
+          tps: 100
       workload:
         module: benchmarks/scenario/paciente/open_copy.js
         
