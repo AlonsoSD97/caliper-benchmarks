@@ -1,0 +1,45 @@
+- name: Install node.js with NVM
+  hosts: all
+  vars:
+    nodejs_version: "20"
+  tasks:
+    - name: Install NVM
+      shell: |
+        curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+        export NVM_DIR="$HOME/.nvm"
+        [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+      args:
+        executable: /bin/bash
+
+    - name: Install Node.js with NVM
+      shell: |
+        export NVM_DIR="$HOME/.nvm"
+        [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+        nvm install {{ nodejs_version }}
+        nvm alias default {{ nodejs_version }}
+      args:
+        executable: /bin/bash
+
+    - name: Verify Node.js installation
+      shell: |
+        export NVM_DIR="$HOME/.nvm"
+        [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+        node -v
+      register: node_version
+      changed_when: false
+
+    - name: Print Node.js version
+      debug:
+        msg: "Node.js version is {{ node_version.stdout }}"
+
+    - name: Verify npm installation
+      shell: |
+        export NVM_DIR="$HOME/.nvm"
+        [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+        npm -v
+      register: npm_version
+      changed_when: false
+
+    - name: Print npm version
+      debug:
+        msg: "npm version is {{ npm_version.stdout }}"

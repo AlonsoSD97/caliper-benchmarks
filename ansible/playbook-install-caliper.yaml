@@ -1,0 +1,20 @@
+- name: Install Hyperledger Caliper CLI
+  hosts: all
+  vars:
+    caliper_version: "0.5.0"
+  tasks:
+    - name: Install Hyperledger Caliper CLI
+      become: yes
+      npm:
+        name: "@hyperledger/caliper-cli@{{ caliper_version }}"
+        global: yes
+
+    - name: Verify Hyperledger Caliper CLI installation
+      command: mpx caliper --version
+      register: caliper_cli_installed
+      changed_when: false
+      failed_when: false
+
+    - name: Print installation status
+      debug:
+        msg: "Hyperledger Caliper CLI is {{ 'installed' if caliper_cli_installed.stdout else 'not installed' }}"

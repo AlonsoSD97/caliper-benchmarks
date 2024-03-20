@@ -1,26 +1,19 @@
 - name: Install Hyperledger Caliper CLI
   hosts: all
   tasks:
-    - name: Install Node.js
-      become: yes
-      apt:
-        name: nodejs
-        state: present
-
-    - name: Install npm
-      become: yes
-      apt:
-        name: npm
-        state: present
-
     - name: Install Hyperledger Caliper CLI
-      become: yes
-      npm:
-        name: "@hyperledger/caliper-cli"
-        global: yes
+      shell: |
+        export NVM_DIR="$HOME/.nvm"
+        [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+        npm install -g @hyperledger/caliper-cli
+      args:
+        executable: /bin/bash
 
     - name: Verify Hyperledger Caliper CLI installation
-      command: npm list -g --depth=0 | grep @hyperledger/caliper-cli
+      shell: |
+        export NVM_DIR="$HOME/.nvm"
+        [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+        npm list -g --depth=0 | grep @hyperledger/caliper-cli
       register: caliper_cli_installed
       changed_when: false
       failed_when: false

@@ -1,0 +1,42 @@
+- name: Install Node.js and Hyperledger Caliper CLI with NVM
+  hosts: all
+  vars:
+    nodejs_version: "14"
+  tasks:
+    - name: Install NVM
+      shell: |
+        curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+        export NVM_DIR="$HOME/.nvm"
+        [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+      args:
+        executable: /bin/bash
+
+    - name: Install Node.js with NVM
+      shell: |
+        export NVM_DIR="$HOME/.nvm"
+        [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+        nvm install {{ nodejs_version }}
+        nvm alias default {{ nodejs_version }}
+      args:
+        executable: /bin/bash
+
+    - name: Install Hyperledger Caliper CLI
+      shell: |
+        export NVM_DIR="$HOME/.nvm"
+        [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+        npm install -g @hyperledger/caliper-cli
+      args:
+        executable: /bin/bash
+
+    - name: Verify Hyperledger Caliper CLI installation
+      shell: |
+        export NVM_DIR="$HOME/.nvm"
+        [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+        npm list -g --depth=0 | grep @hyperledger/caliper-cli
+      register: caliper_cli_installed
+      changed_when: false
+      failed_when: false
+
+    - name: Print installation status
+      debug:
+        msg: "Hyperledger Caliper CLI is {{ 'installed' if caliper_cli_installed.stdout else 'not installed' }}"
