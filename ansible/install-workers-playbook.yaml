@@ -28,5 +28,3 @@
     - name: Print installation status
       debug:
         msg: "Hyperledger Caliper CLI is {{ 'installed' if caliper_cli_installed.stdout else 'not installed' }}"
-        
-
