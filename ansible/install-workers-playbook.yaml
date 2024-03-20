@@ -1,0 +1,32 @@
+- name: Install Hyperledger Caliper CLI
+  hosts: all
+  tasks:
+    - name: Install Node.js
+      become: yes
+      apt:
+        name: nodejs
+        state: present
+
+    - name: Install npm
+      become: yes
+      apt:
+        name: npm
+        state: present
+
+    - name: Install Hyperledger Caliper CLI
+      become: yes
+      npm:
+        name: "@hyperledger/caliper-cli"
+        global: yes
+
+    - name: Verify Hyperledger Caliper CLI installation
+      command: npm list -g --depth=0 | grep @hyperledger/caliper-cli
+      register: caliper_cli_installed
+      changed_when: false
+      failed_when: false
+
+    - name: Print installation status
+      debug:
+        msg: "Hyperledger Caliper CLI is {{ 'installed' if caliper_cli_installed.stdout else 'not installed' }}"
+        
+
