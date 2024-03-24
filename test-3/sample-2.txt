@@ -1,0 +1,1567 @@
+2024.03.21-22:57:05.100[32m info [39m [caliper] [cli-launch-manager] 	Set workspace path: /home/salasalonso/caliper-benchmarks
+2024.03.21-22:57:05.101[32m info [39m [caliper] [cli-launch-manager] 	Set benchmark configuration path: /home/salasalonso/caliper-benchmarks/benchmarks/scenario/paciente/config.yaml
+2024.03.21-22:57:05.101[32m info [39m [caliper] [cli-launch-manager] 	Set network configuration path: //home/salasalonso/caliper-benchmarks/networks/besu_external/1node-clique/networkconfig.json
+2024.03.21-22:57:05.102[32m info [39m [caliper] [cli-launch-manager] 	Set SUT type: ethereum
+2024.03.21-22:57:05.384[32m info [39m [caliper] [benchmark-validator] 	No observer specified, will default to `none`
+2024.03.21-22:57:05.384[32m info [39m [caliper] [caliper-engine] 	Starting benchmark flow
+2024.03.21-22:57:05.384[32m info [39m [caliper] [caliper-engine] 	Network configuration attribute "caliper.command.start" is not present, skipping start command
+2024.03.21-22:57:05.432[32m info [39m [caliper] [caliper-engine] 	Executed "init" step in 0.034 seconds
+2024.03.21-22:57:05.433[32m info [39m [caliper] [ethereum-connector] 	Creating contracts...
+2024.03.21-22:57:06.092[32m info [39m [caliper] [ethereum-connector] 	Deployed contract undefined at 0xF12b5dd4EAD5F743C6BaA640B0216200e89B60Da
+2024.03.21-22:57:06.093[32m info [39m [caliper] [caliper-engine] 	Executed "install" step in 0.661 seconds
+2024.03.21-22:57:06.095[32m info [39m [caliper] [monitor.js] 	No resource monitors specified
+2024.03.21-22:57:06.096[32m info [39m [caliper] [default-observer] 	Observer interval set to 5000 milliseconds
+2024.03.21-22:57:06.099[32m info [39m [caliper] [round-orchestrator] 	Preparing worker connections
+2024.03.21-22:57:06.099[32m info [39m [caliper] [worker-orchestrator] 	Launching worker 1 of 1
+2024.03.21-22:57:06.103[32m info [39m [caliper] [worker-orchestrator] 	Messenger not configured, entering configure phase...
+2024.03.21-22:57:06.103[32m info [39m [caliper] [worker-orchestrator] 	No existing workers detected, entering worker launch phase...
+2024.03.21-22:57:06.103[32m info [39m [caliper] [worker-orchestrator] 	Waiting for 1 workers to be connected...
+2024.03.21-22:57:06.343[32m info [39m [caliper] [cli-launch-worker] 	Set workspace path: /home/salasalonso/caliper-benchmarks
+2024.03.21-22:57:06.344[32m info [39m [caliper] [cli-launch-worker] 	Set benchmark configuration path: /home/salasalonso/caliper-benchmarks/benchmarks/scenario/paciente/config.yaml
+2024.03.21-22:57:06.345[32m info [39m [caliper] [cli-launch-worker] 	Set network configuration path: //home/salasalonso/caliper-benchmarks/networks/besu_external/1node-clique/networkconfig.json
+2024.03.21-22:57:06.345[32m info [39m [caliper] [cli-launch-worker] 	Set SUT type: ethereum
+2024.03.21-22:57:06.649[32m info [39m [caliper] [worker-orchestrator] 	1 workers connected, progressing to worker assignment phase.
+2024.03.21-22:57:06.649[32m info [39m [caliper] [worker-orchestrator] 	Workers currently unassigned, awaiting index assignment...
+2024.03.21-22:57:06.650[32m info [39m [caliper] [worker-orchestrator] 	Waiting for 1 workers to be assigned...
+2024.03.21-22:57:06.704[32m info [39m [caliper] [worker-orchestrator] 	1 workers assigned, progressing to worker initialization phase.
+2024.03.21-22:57:06.705[32m info [39m [caliper] [worker-orchestrator] 	Waiting for 1 workers to be ready...
+2024.03.21-22:57:06.705[32m info [39m [caliper] [worker-message-handler] 	Initializing Worker#0...
+2024.03.21-22:57:06.717[32m info [39m [caliper] [worker-message-handler] 	Worker#0 initialized
+2024.03.21-22:57:06.718[32m info [39m [caliper] [worker-orchestrator] 	1 workers ready, progressing to test preparation phase.
+2024.03.21-22:57:06.718[32m info [39m [caliper] [round-orchestrator] 	Started round 1 (añadir_paciente)
+2024.03.21-22:57:06.720[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#0 for Round#0
+2024.03.21-22:57:07.101[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 0 is starting...
+2024.03.21-22:57:07.104[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 0 is completed
+2024.03.21-22:57:07.104[32m info [39m [caliper] [worker-message-handler] 	Worker#0 prepared for Round#0
+2024.03.21-22:57:07.105[32m info [39m [caliper] [worker-orchestrator] 	1 workers prepared, progressing to test phase.
+2024.03.21-22:57:07.105[32m info [39m [caliper] [round-orchestrator] 	Monitors successfully started
+2024.03.21-22:57:07.107[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is starting Round#0
+2024.03.21-22:57:07.127[32m info [39m [caliper] [caliper-worker] 	Worker #0 starting workload loop
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1950-8-2',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1963-9-23',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1970-3-6',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1957-5-1',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1992-10-4',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1958-10-15',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1967-8-28',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1999-6-4',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1975-3-26',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1964-11-14',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1976-4-12',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1990-10-17',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1959-4-5',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1971-9-16',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1960-12-7',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1963-8-22',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1976-7-12',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1986-4-20',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1992-7-24',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1987-10-23',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1994-5-6',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1956-12-5',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1971-11-20',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1989-8-12',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1984-1-4',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1952-2-23',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1988-11-22',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1950-6-27',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1959-8-12',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1955-10-2',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1992-7-3',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1979-7-14',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1973-11-22',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1951-12-11',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1965-2-1',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1988-6-23',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1984-2-19',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1976-4-1',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1968-1-22',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1990-10-10',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1992-5-19',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1964-1-27',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1970-10-25',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1968-5-19',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1965-8-18',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1982-12-26',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1970-11-17',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1992-7-22',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1990-6-23',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1977-10-20',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1971-4-20',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1952-3-10',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1971-2-4',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1983-10-13',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1957-6-15',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1980-12-4',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1951-8-13',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1950-10-1',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1964-2-26',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1996-10-24',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1959-8-26',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1972-3-19',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1987-12-19',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1988-7-9',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1953-8-25',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1965-11-10',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1959-4-5',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1962-5-16',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1968-6-11',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1975-11-7',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1971-7-11',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1974-5-14',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1970-4-18',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1958-3-28',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1985-2-20',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1972-4-25',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1955-2-22',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1950-1-27',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1990-8-13',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1993-11-26',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1995-9-24',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1962-2-18',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1996-8-9',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1964-11-15',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1989-1-17',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1996-2-4',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1994-10-4',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1963-1-25',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1971-7-17',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1984-11-9',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1982-10-20',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1995-6-14',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1995-3-1',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1974-9-26',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1957-2-21',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1950-3-14',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1967-12-24',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1987-10-15',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1997-4-8',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+{
+  contract: 'paciente',
+  verb: 'updatePatientData',
+  args: [
+    [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], '1954-12-1',
+      [Array], [Array],
+      [Array], [Array]
+    ]
+  ],
+  readOnly: false
+}
+2024.03.21-22:57:12.113[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 100 Succ: 100 Fail:0 Unfinished:0
+2024.03.21-22:57:12.488[32m info [39m [caliper] [worker-message-handler] 	Worker#0 finished Round#0
+2024.03.21-22:57:17.491[32m info [39m [caliper] [default-observer] 	Resetting txCount indicator count
+2024.03.21-22:57:17.491[32m info [39m [caliper] [report-builder] 	### Test result ###
+2024.03.21-22:57:17.495[32m info [39m [caliper] [report-builder] 	
++-----------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name            | Succ | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|-----------------|------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| añadir_paciente | 100  | 0    | 55.6            | 3.32            | 1.67            | 2.54            | 23.2             |
++-----------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2024.03.21-22:57:17.496[32m info [39m [caliper] [round-orchestrator] 	Finished round 1 (añadir_paciente) in 4.36 seconds
+2024.03.21-22:57:17.496[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2024.03.21-22:57:17.496[32m info [39m [caliper] [report-builder] 	### All test results ###
+2024.03.21-22:57:17.497[32m info [39m [caliper] [report-builder] 	
++-----------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name            | Succ | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|-----------------|------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| añadir_paciente | 100  | 0    | 55.6            | 3.32            | 1.67            | 2.54            | 23.2             |
++-----------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2024.03.21-22:57:17.503[32m info [39m [caliper] [report-builder] 	Generated report with path /home/salasalonso/caliper-benchmarks/report.html
+2024.03.21-22:57:17.504[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2024.03.21-22:57:17.504[32m info [39m [caliper] [worker-orchestrator] 	Sending exit message to connected workers
+2024.03.21-22:57:17.504[32m info [39m [caliper] [round-orchestrator] 	Benchmark finished in 10.786 seconds. Total rounds: 1. Successful rounds: 1. Failed rounds: 0.
+2024.03.21-22:57:17.504[32m info [39m [caliper] [caliper-engine] 	Network configuration attribute "caliper.command.end" is not present, skipping end command
+2024.03.21-22:57:17.504[32m info [39m [caliper] [cli-launch-manager] 	Benchmark successfully finished
+2024.03.21-22:57:17.505[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is exiting

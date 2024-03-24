@@ -25,7 +25,7 @@ function extractValuesObjectAnidated(obj) {
 tuplePaciente = extractValuesObjectAnidated(paciente.patientData);
 console.log(tuplePaciente);
 
-fs.writeFile('/home/alonso/quickstart besu v2/caliper-benchmarks/benchmarks/scenario/paciente/tuplePaciente.txt', JSON.stringify(tuplePaciente), (err) => {
+fs.writeFile('./tuplePaciente2.txt', JSON.stringify(tuplePaciente), (err) => {
     if (err) throw err;
     console.log('The file has been saved!');
 });

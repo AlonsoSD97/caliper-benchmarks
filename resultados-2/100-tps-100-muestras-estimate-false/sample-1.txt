@@ -1,0 +1,160 @@
+2024.03.24-02:40:27.000[32m info [39m [caliper] [cli-launch-manager] 	Set workspace path: /home/salasalonso/caliper-benchmarks
+2024.03.24-02:40:27.001[32m info [39m [caliper] [cli-launch-manager] 	Set benchmark configuration path: /home/salasalonso/caliper-benchmarks/benchmarks/scenario/paciente/config.yaml
+2024.03.24-02:40:27.001[32m info [39m [caliper] [cli-launch-manager] 	Set network configuration path: //home/salasalonso/caliper-benchmarks/networks/besu_external/1node-clique/networkconfig.json
+2024.03.24-02:40:27.001[32m info [39m [caliper] [cli-launch-manager] 	Set SUT type: ethereum
+2024.03.24-02:40:27.273[32m info [39m [caliper] [benchmark-validator] 	No observer specified, will default to `none`
+2024.03.24-02:40:27.273[32m info [39m [caliper] [caliper-engine] 	Starting benchmark flow
+2024.03.24-02:40:27.273[32m info [39m [caliper] [caliper-engine] 	Network configuration attribute "caliper.command.start" is not present, skipping start command
+2024.03.24-02:40:27.326[32m info [39m [caliper] [caliper-engine] 	Executed "init" step in 0.039 seconds
+2024.03.24-02:40:27.327[32m info [39m [caliper] [ethereum-connector] 	Creating contracts...
+2024.03.24-02:40:29.046[32m info [39m [caliper] [ethereum-connector] 	Deployed contract undefined at 0xaA79f17eD8A1326Eb5F13873586a60597c495dD7
+2024.03.24-02:40:29.047[32m info [39m [caliper] [caliper-engine] 	Executed "install" step in 1.72 seconds
+2024.03.24-02:40:29.048[32m info [39m [caliper] [monitor.js] 	No resource monitors specified
+2024.03.24-02:40:29.049[32m info [39m [caliper] [default-observer] 	Observer interval set to 5000 milliseconds
+2024.03.24-02:40:29.051[32m info [39m [caliper] [round-orchestrator] 	Preparing worker connections
+2024.03.24-02:40:29.051[32m info [39m [caliper] [worker-orchestrator] 	Launching worker 1 of 1
+2024.03.24-02:40:29.055[32m info [39m [caliper] [worker-orchestrator] 	Messenger not configured, entering configure phase...
+2024.03.24-02:40:29.055[32m info [39m [caliper] [worker-orchestrator] 	No existing workers detected, entering worker launch phase...
+2024.03.24-02:40:29.055[32m info [39m [caliper] [worker-orchestrator] 	Waiting for 1 workers to be connected...
+2024.03.24-02:40:29.282[32m info [39m [caliper] [cli-launch-worker] 	Set workspace path: /home/salasalonso/caliper-benchmarks
+2024.03.24-02:40:29.283[32m info [39m [caliper] [cli-launch-worker] 	Set benchmark configuration path: /home/salasalonso/caliper-benchmarks/benchmarks/scenario/paciente/config.yaml
+2024.03.24-02:40:29.283[32m info [39m [caliper] [cli-launch-worker] 	Set network configuration path: //home/salasalonso/caliper-benchmarks/networks/besu_external/1node-clique/networkconfig.json
+2024.03.24-02:40:29.283[32m info [39m [caliper] [cli-launch-worker] 	Set SUT type: ethereum
+2024.03.24-02:40:29.597[32m info [39m [caliper] [worker-orchestrator] 	1 workers connected, progressing to worker assignment phase.
+2024.03.24-02:40:29.597[32m info [39m [caliper] [worker-orchestrator] 	Workers currently unassigned, awaiting index assignment...
+2024.03.24-02:40:29.598[32m info [39m [caliper] [worker-orchestrator] 	Waiting for 1 workers to be assigned...
+2024.03.24-02:40:29.650[32m info [39m [caliper] [worker-orchestrator] 	1 workers assigned, progressing to worker initialization phase.
+2024.03.24-02:40:29.650[32m info [39m [caliper] [worker-orchestrator] 	Waiting for 1 workers to be ready...
+2024.03.24-02:40:29.652[32m info [39m [caliper] [worker-message-handler] 	Initializing Worker#0...
+2024.03.24-02:40:29.666[32m info [39m [caliper] [worker-message-handler] 	Worker#0 initialized
+2024.03.24-02:40:29.667[32m info [39m [caliper] [worker-orchestrator] 	1 workers ready, progressing to test preparation phase.
+2024.03.24-02:40:29.667[32m info [39m [caliper] [round-orchestrator] 	Started round 1 (añadir_paciente)
+2024.03.24-02:40:29.671[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#0 for Round#0
+2024.03.24-02:40:29.717[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 0 is starting...
+2024.03.24-02:40:29.719[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 0 is completed
+2024.03.24-02:40:29.720[32m info [39m [caliper] [worker-message-handler] 	Worker#0 prepared for Round#0
+2024.03.24-02:40:29.720[32m info [39m [caliper] [worker-orchestrator] 	1 workers prepared, progressing to test phase.
+2024.03.24-02:40:29.721[32m info [39m [caliper] [round-orchestrator] 	Monitors successfully started
+2024.03.24-02:40:29.722[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is starting Round#0
+2024.03.24-02:40:29.733[32m info [39m [caliper] [caliper-worker] 	Worker #0 starting workload loop
+2024.03.24-02:40:30.385[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72d2
+2024.03.24-02:40:30.385[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.395[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72d3
+2024.03.24-02:40:30.396[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.405[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72d4
+2024.03.24-02:40:30.405[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.413[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72d5
+2024.03.24-02:40:30.413[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.422[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72d6
+2024.03.24-02:40:30.423[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.431[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72d7
+2024.03.24-02:40:30.431[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.442[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72d8
+2024.03.24-02:40:30.442[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.451[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72d9
+2024.03.24-02:40:30.451[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.460[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72da
+2024.03.24-02:40:30.460[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.470[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72db
+2024.03.24-02:40:30.470[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.479[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72dc
+2024.03.24-02:40:30.479[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.488[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72dd
+2024.03.24-02:40:30.488[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.497[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72de
+2024.03.24-02:40:30.497[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.506[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72df
+2024.03.24-02:40:30.506[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.515[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72e0
+2024.03.24-02:40:30.515[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.523[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72e1
+2024.03.24-02:40:30.523[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.532[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72e2
+2024.03.24-02:40:30.532[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.541[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72e3
+2024.03.24-02:40:30.541[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.549[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72e4
+2024.03.24-02:40:30.549[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.558[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72e5
+2024.03.24-02:40:30.559[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.567[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72e6
+2024.03.24-02:40:30.567[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.576[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72e7
+2024.03.24-02:40:30.576[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.585[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72e8
+2024.03.24-02:40:30.585[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.593[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72e9
+2024.03.24-02:40:30.593[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.602[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72ea
+2024.03.24-02:40:30.602[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.611[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72eb
+2024.03.24-02:40:30.611[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.619[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72ec
+2024.03.24-02:40:30.619[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.628[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72ed
+2024.03.24-02:40:30.628[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.637[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72ee
+2024.03.24-02:40:30.637[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.645[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72ef
+2024.03.24-02:40:30.645[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.654[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72f0
+2024.03.24-02:40:30.654[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.663[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72f1
+2024.03.24-02:40:30.663[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.672[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72f2
+2024.03.24-02:40:30.672[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.682[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72f3
+2024.03.24-02:40:30.683[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.694[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72f4
+2024.03.24-02:40:30.695[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.705[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72f5
+2024.03.24-02:40:30.705[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.714[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72f6
+2024.03.24-02:40:30.715[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.724[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72f7
+2024.03.24-02:40:30.724[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.734[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72f8
+2024.03.24-02:40:30.734[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.743[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72f9
+2024.03.24-02:40:30.743[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.752[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72fa
+2024.03.24-02:40:30.752[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.762[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72fb
+2024.03.24-02:40:30.762[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.771[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72fc
+2024.03.24-02:40:30.771[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.781[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72fd
+2024.03.24-02:40:30.781[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.790[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72fe
+2024.03.24-02:40:30.790[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.792[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x72ff
+2024.03.24-02:40:30.792[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:30.793[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x7300
+2024.03.24-02:40:30.793[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Replacement transaction underpriced
+2024.03.24-02:40:33.989[32m info [39m [caliper] [worker-message-handler] 	Worker#0 finished Round#0
+2024.03.24-02:40:39.001[32m info [39m [caliper] [default-observer] 	Resetting txCount indicator count
+2024.03.24-02:40:39.002[32m info [39m [caliper] [report-builder] 	### Test result ###
+2024.03.24-02:40:39.005[32m info [39m [caliper] [report-builder] 	
++-----------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name            | Succ | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|-----------------|------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| añadir_paciente | 53   | 47   | 95.6            | 3.18            | 2.64            | 2.87            | 30.8             |
++-----------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2024.03.24-02:40:39.006[32m info [39m [caliper] [round-orchestrator] 	Finished round 1 (añadir_paciente) in 3.256 seconds
+2024.03.24-02:40:39.006[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2024.03.24-02:40:39.006[32m info [39m [caliper] [report-builder] 	### All test results ###
+2024.03.24-02:40:39.007[32m info [39m [caliper] [report-builder] 	
++-----------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name            | Succ | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|-----------------|------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| añadir_paciente | 53   | 47   | 95.6            | 3.18            | 2.64            | 2.87            | 30.8             |
++-----------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2024.03.24-02:40:39.017[32m info [39m [caliper] [report-builder] 	Generated report with path /home/salasalonso/caliper-benchmarks/report.html
+2024.03.24-02:40:39.018[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2024.03.24-02:40:39.018[32m info [39m [caliper] [worker-orchestrator] 	Sending exit message to connected workers
+2024.03.24-02:40:39.018[32m info [39m [caliper] [round-orchestrator] 	Benchmark finished in 9.351 seconds. Total rounds: 1. Successful rounds: 1. Failed rounds: 0.
+2024.03.24-02:40:39.018[32m info [39m [caliper] [caliper-engine] 	Network configuration attribute "caliper.command.end" is not present, skipping end command
+2024.03.24-02:40:39.018[32m info [39m [caliper] [cli-launch-manager] 	Benchmark successfully finished
+2024.03.24-02:40:39.019[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is exiting

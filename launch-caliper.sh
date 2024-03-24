@@ -17,6 +17,7 @@ do
     | tee output.txt
 
     # Export the HTM4L document with the name sample-n
-    cp output.html "$output_dir/sample-$i.html"
+    mkdir -p "$output_dir"
+    cp report.html "$output_dir/report-$i.html"
     cp output.txt "$output_dir/sample-$i.txt"
 done

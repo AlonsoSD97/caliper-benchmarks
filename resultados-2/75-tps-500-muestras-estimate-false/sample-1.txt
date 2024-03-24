@@ -1,0 +1,535 @@
+2024.03.24-02:04:21.334[32m info [39m [caliper] [cli-launch-manager] 	Set workspace path: /home/salasalonso/caliper-benchmarks
+2024.03.24-02:04:21.335[32m info [39m [caliper] [cli-launch-manager] 	Set benchmark configuration path: /home/salasalonso/caliper-benchmarks/benchmarks/scenario/paciente/config.yaml
+2024.03.24-02:04:21.335[32m info [39m [caliper] [cli-launch-manager] 	Set network configuration path: //home/salasalonso/caliper-benchmarks/networks/besu_external/1node-clique/networkconfig.json
+2024.03.24-02:04:21.335[32m info [39m [caliper] [cli-launch-manager] 	Set SUT type: ethereum
+2024.03.24-02:04:21.622[32m info [39m [caliper] [benchmark-validator] 	No observer specified, will default to `none`
+2024.03.24-02:04:21.622[32m info [39m [caliper] [caliper-engine] 	Starting benchmark flow
+2024.03.24-02:04:21.623[32m info [39m [caliper] [caliper-engine] 	Network configuration attribute "caliper.command.start" is not present, skipping start command
+2024.03.24-02:04:21.675[32m info [39m [caliper] [caliper-engine] 	Executed "init" step in 0.037 seconds
+2024.03.24-02:04:21.675[32m info [39m [caliper] [ethereum-connector] 	Creating contracts...
+2024.03.24-02:04:23.035[32m info [39m [caliper] [ethereum-connector] 	Deployed contract undefined at 0x4B31c27826C810007749860be339ECC28f56fb1b
+2024.03.24-02:04:23.035[32m info [39m [caliper] [caliper-engine] 	Executed "install" step in 1.36 seconds
+2024.03.24-02:04:23.037[32m info [39m [caliper] [monitor.js] 	No resource monitors specified
+2024.03.24-02:04:23.038[32m info [39m [caliper] [default-observer] 	Observer interval set to 5000 milliseconds
+2024.03.24-02:04:23.040[32m info [39m [caliper] [round-orchestrator] 	Preparing worker connections
+2024.03.24-02:04:23.040[32m info [39m [caliper] [worker-orchestrator] 	Launching worker 1 of 1
+2024.03.24-02:04:23.043[32m info [39m [caliper] [worker-orchestrator] 	Messenger not configured, entering configure phase...
+2024.03.24-02:04:23.044[32m info [39m [caliper] [worker-orchestrator] 	No existing workers detected, entering worker launch phase...
+2024.03.24-02:04:23.044[32m info [39m [caliper] [worker-orchestrator] 	Waiting for 1 workers to be connected...
+2024.03.24-02:04:23.272[32m info [39m [caliper] [cli-launch-worker] 	Set workspace path: /home/salasalonso/caliper-benchmarks
+2024.03.24-02:04:23.273[32m info [39m [caliper] [cli-launch-worker] 	Set benchmark configuration path: /home/salasalonso/caliper-benchmarks/benchmarks/scenario/paciente/config.yaml
+2024.03.24-02:04:23.273[32m info [39m [caliper] [cli-launch-worker] 	Set network configuration path: //home/salasalonso/caliper-benchmarks/networks/besu_external/1node-clique/networkconfig.json
+2024.03.24-02:04:23.274[32m info [39m [caliper] [cli-launch-worker] 	Set SUT type: ethereum
+2024.03.24-02:04:23.571[32m info [39m [caliper] [worker-orchestrator] 	1 workers connected, progressing to worker assignment phase.
+2024.03.24-02:04:23.571[32m info [39m [caliper] [worker-orchestrator] 	Workers currently unassigned, awaiting index assignment...
+2024.03.24-02:04:23.571[32m info [39m [caliper] [worker-orchestrator] 	Waiting for 1 workers to be assigned...
+2024.03.24-02:04:23.619[32m info [39m [caliper] [worker-orchestrator] 	1 workers assigned, progressing to worker initialization phase.
+2024.03.24-02:04:23.619[32m info [39m [caliper] [worker-orchestrator] 	Waiting for 1 workers to be ready...
+2024.03.24-02:04:23.620[32m info [39m [caliper] [worker-message-handler] 	Initializing Worker#0...
+2024.03.24-02:04:23.629[32m info [39m [caliper] [worker-message-handler] 	Worker#0 initialized
+2024.03.24-02:04:23.630[32m info [39m [caliper] [worker-orchestrator] 	1 workers ready, progressing to test preparation phase.
+2024.03.24-02:04:23.630[32m info [39m [caliper] [round-orchestrator] 	Started round 1 (añadir_paciente)
+2024.03.24-02:04:23.632[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#0 for Round#0
+2024.03.24-02:04:23.690[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 0 is starting...
+2024.03.24-02:04:23.692[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 0 is completed
+2024.03.24-02:04:23.692[32m info [39m [caliper] [worker-message-handler] 	Worker#0 prepared for Round#0
+2024.03.24-02:04:23.693[32m info [39m [caliper] [worker-orchestrator] 	1 workers prepared, progressing to test phase.
+2024.03.24-02:04:23.693[32m info [39m [caliper] [round-orchestrator] 	Monitors successfully started
+2024.03.24-02:04:23.695[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is starting Round#0
+2024.03.24-02:04:23.710[32m info [39m [caliper] [caliper-worker] 	Worker #0 starting workload loop
+2024.03.24-02:04:27.616[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a67
+2024.03.24-02:04:27.616[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.616[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a68
+2024.03.24-02:04:27.616[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.616[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a69
+2024.03.24-02:04:27.616[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.616[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a6a
+2024.03.24-02:04:27.616[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.616[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a6b
+2024.03.24-02:04:27.616[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.616[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a6c
+2024.03.24-02:04:27.616[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.616[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a6d
+2024.03.24-02:04:27.616[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.617[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a6e
+2024.03.24-02:04:27.617[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.617[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a6f
+2024.03.24-02:04:27.617[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.626[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a70
+2024.03.24-02:04:27.627[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.627[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a71
+2024.03.24-02:04:27.627[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.627[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a72
+2024.03.24-02:04:27.627[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.628[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a73
+2024.03.24-02:04:27.628[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.629[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a74
+2024.03.24-02:04:27.629[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.641[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a75
+2024.03.24-02:04:27.641[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.643[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a76
+2024.03.24-02:04:27.643[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.654[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a77
+2024.03.24-02:04:27.654[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.654[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a78
+2024.03.24-02:04:27.655[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.656[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a79
+2024.03.24-02:04:27.657[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.657[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a7a
+2024.03.24-02:04:27.657[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.670[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a7b
+2024.03.24-02:04:27.670[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.682[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a7c
+2024.03.24-02:04:27.682[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.693[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a7d
+2024.03.24-02:04:27.694[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.707[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a7e
+2024.03.24-02:04:27.707[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.721[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a7f
+2024.03.24-02:04:27.721[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.734[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a80
+2024.03.24-02:04:27.734[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.750[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a81
+2024.03.24-02:04:27.750[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.761[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a82
+2024.03.24-02:04:27.761[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.775[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a83
+2024.03.24-02:04:27.776[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.787[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a84
+2024.03.24-02:04:27.787[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.801[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a85
+2024.03.24-02:04:27.801[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.825[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a86
+2024.03.24-02:04:27.825[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.828[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a87
+2024.03.24-02:04:27.828[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.841[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a88
+2024.03.24-02:04:27.842[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.855[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a89
+2024.03.24-02:04:27.855[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.867[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a8a
+2024.03.24-02:04:27.867[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.892[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a8b
+2024.03.24-02:04:27.892[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.894[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a8c
+2024.03.24-02:04:27.894[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.921[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a8d
+2024.03.24-02:04:27.921[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.923[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a8e
+2024.03.24-02:04:27.923[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.935[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a8f
+2024.03.24-02:04:27.935[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.947[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a90
+2024.03.24-02:04:27.947[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.962[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a91
+2024.03.24-02:04:27.962[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.975[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a92
+2024.03.24-02:04:27.975[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:27.988[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a93
+2024.03.24-02:04:27.988[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.002[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a94
+2024.03.24-02:04:28.002[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.015[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a95
+2024.03.24-02:04:28.015[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.028[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a96
+2024.03.24-02:04:28.029[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.041[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a97
+2024.03.24-02:04:28.041[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.055[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a98
+2024.03.24-02:04:28.055[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.068[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a99
+2024.03.24-02:04:28.068[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.081[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a9a
+2024.03.24-02:04:28.081[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.095[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a9b
+2024.03.24-02:04:28.095[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.108[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a9c
+2024.03.24-02:04:28.108[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.121[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a9d
+2024.03.24-02:04:28.121[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.135[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a9e
+2024.03.24-02:04:28.135[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.148[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6a9f
+2024.03.24-02:04:28.148[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.161[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6aa0
+2024.03.24-02:04:28.161[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.185[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6aa1
+2024.03.24-02:04:28.185[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.188[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6aa2
+2024.03.24-02:04:28.188[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.202[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6aa3
+2024.03.24-02:04:28.202[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.214[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6aa4
+2024.03.24-02:04:28.214[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.228[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6aa5
+2024.03.24-02:04:28.228[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.242[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6aa6
+2024.03.24-02:04:28.242[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.254[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6aa7
+2024.03.24-02:04:28.254[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.267[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6aa8
+2024.03.24-02:04:28.268[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.282[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6aa9
+2024.03.24-02:04:28.282[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.297[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6aaa
+2024.03.24-02:04:28.297[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.309[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6aab
+2024.03.24-02:04:28.310[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.322[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6aac
+2024.03.24-02:04:28.323[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.334[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6aad
+2024.03.24-02:04:28.334[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.347[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6aae
+2024.03.24-02:04:28.348[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.361[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6aaf
+2024.03.24-02:04:28.361[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.374[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ab0
+2024.03.24-02:04:28.374[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.387[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ab1
+2024.03.24-02:04:28.388[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.400[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ab2
+2024.03.24-02:04:28.401[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.414[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ab3
+2024.03.24-02:04:28.414[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.427[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ab4
+2024.03.24-02:04:28.427[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.441[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ab5
+2024.03.24-02:04:28.441[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.454[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ab6
+2024.03.24-02:04:28.454[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.467[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ab7
+2024.03.24-02:04:28.467[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.481[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ab8
+2024.03.24-02:04:28.481[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.496[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ab9
+2024.03.24-02:04:28.496[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.508[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6aba
+2024.03.24-02:04:28.508[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.522[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6abb
+2024.03.24-02:04:28.523[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.534[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6abc
+2024.03.24-02:04:28.534[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.546[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6abd
+2024.03.24-02:04:28.547[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.562[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6abe
+2024.03.24-02:04:28.562[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.575[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6abf
+2024.03.24-02:04:28.575[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.588[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ac0
+2024.03.24-02:04:28.588[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.602[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ac1
+2024.03.24-02:04:28.602[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.614[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ac2
+2024.03.24-02:04:28.615[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.627[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ac3
+2024.03.24-02:04:28.627[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.642[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ac4
+2024.03.24-02:04:28.642[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.654[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ac5
+2024.03.24-02:04:28.654[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.668[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ac6
+2024.03.24-02:04:28.668[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.681[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ac7
+2024.03.24-02:04:28.682[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.694[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ac8
+2024.03.24-02:04:28.694[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.702[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 301 Succ: 76 Fail:24 Unfinished:201
+2024.03.24-02:04:28.710[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ac9
+2024.03.24-02:04:28.710[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.722[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6aca
+2024.03.24-02:04:28.722[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.735[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6acb
+2024.03.24-02:04:28.735[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.748[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6acc
+2024.03.24-02:04:28.748[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.773[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6acd
+2024.03.24-02:04:28.773[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.775[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ace
+2024.03.24-02:04:28.775[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.788[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6acf
+2024.03.24-02:04:28.788[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.802[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ad0
+2024.03.24-02:04:28.802[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.815[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ad1
+2024.03.24-02:04:28.816[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.827[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ad2
+2024.03.24-02:04:28.827[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.842[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ad3
+2024.03.24-02:04:28.842[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.854[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ad4
+2024.03.24-02:04:28.854[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.868[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ad5
+2024.03.24-02:04:28.869[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.881[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ad6
+2024.03.24-02:04:28.881[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.894[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ad7
+2024.03.24-02:04:28.894[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.907[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ad8
+2024.03.24-02:04:28.908[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.922[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ad9
+2024.03.24-02:04:28.922[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.934[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ada
+2024.03.24-02:04:28.934[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.948[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6adb
+2024.03.24-02:04:28.948[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.961[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6adc
+2024.03.24-02:04:28.961[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.974[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6add
+2024.03.24-02:04:28.974[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:28.988[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ade
+2024.03.24-02:04:28.988[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:29.001[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6adf
+2024.03.24-02:04:29.001[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:29.016[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ae0
+2024.03.24-02:04:29.016[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:29.028[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ae1
+2024.03.24-02:04:29.028[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:29.067[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ae2
+2024.03.24-02:04:29.067[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:29.627[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6af9
+2024.03.24-02:04:29.627[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Internal error
+2024.03.24-02:04:29.628[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6afa
+2024.03.24-02:04:29.628[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Internal error
+2024.03.24-02:04:30.065[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b2f
+2024.03.24-02:04:30.066[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:30.081[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b30
+2024.03.24-02:04:30.081[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:30.096[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b31
+2024.03.24-02:04:30.096[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:30.107[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b32
+2024.03.24-02:04:30.107[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:30.121[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b33
+2024.03.24-02:04:30.122[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:30.134[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b34
+2024.03.24-02:04:30.134[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:30.147[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b35
+2024.03.24-02:04:30.147[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:30.162[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b36
+2024.03.24-02:04:30.162[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:30.174[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b37
+2024.03.24-02:04:30.174[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:30.188[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b38
+2024.03.24-02:04:30.188[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:30.202[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b39
+2024.03.24-02:04:30.202[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:30.214[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b3a
+2024.03.24-02:04:30.214[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:30.230[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b3b
+2024.03.24-02:04:30.230[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:30.242[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b3c
+2024.03.24-02:04:30.242[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:30.255[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b3d
+2024.03.24-02:04:30.255[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:30.280[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b3e
+2024.03.24-02:04:30.280[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:30.282[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b3f
+2024.03.24-02:04:30.282[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:30.295[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b40
+2024.03.24-02:04:30.295[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:30.308[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b41
+2024.03.24-02:04:30.308[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:30.321[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b42
+2024.03.24-02:04:30.321[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:30.335[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b43
+2024.03.24-02:04:30.335[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:30.347[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b44
+2024.03.24-02:04:30.348[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:30.361[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b45
+2024.03.24-02:04:30.361[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:30.375[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b46
+2024.03.24-02:04:30.375[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Transaction nonce is too distant from current sender nonce
+2024.03.24-02:04:33.695[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 500 Succ: 276 Fail:150 Unfinished:74
+2024.03.24-02:04:38.696[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 500 Succ: 276 Fail:150 Unfinished:74
+2024.03.24-02:04:43.697[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 500 Succ: 276 Fail:150 Unfinished:74
+2024.03.24-02:04:48.697[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 500 Succ: 276 Fail:150 Unfinished:74
+2024.03.24-02:04:53.698[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 500 Succ: 276 Fail:150 Unfinished:74
+2024.03.24-02:04:58.699[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 500 Succ: 276 Fail:150 Unfinished:74
+2024.03.24-02:05:03.700[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 500 Succ: 276 Fail:150 Unfinished:74
+2024.03.24-02:05:08.701[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 500 Succ: 276 Fail:150 Unfinished:74
+2024.03.24-02:05:13.703[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 500 Succ: 276 Fail:150 Unfinished:74
+2024.03.24-02:05:18.704[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 500 Succ: 276 Fail:150 Unfinished:74
+2024.03.24-02:05:23.705[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 500 Succ: 276 Fail:150 Unfinished:74
+2024.03.24-02:05:28.706[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 500 Succ: 276 Fail:150 Unfinished:74
+2024.03.24-02:05:33.707[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 500 Succ: 276 Fail:150 Unfinished:74
+2024.03.24-02:05:38.708[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 500 Succ: 276 Fail:150 Unfinished:74
+2024.03.24-02:05:43.709[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 500 Succ: 276 Fail:150 Unfinished:74
+2024.03.24-02:05:48.710[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 500 Succ: 276 Fail:150 Unfinished:74
+2024.03.24-02:05:53.711[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 500 Succ: 276 Fail:150 Unfinished:74
+2024.03.24-02:05:58.712[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 500 Succ: 276 Fail:150 Unfinished:74
+2024.03.24-02:06:03.713[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 500 Succ: 276 Fail:150 Unfinished:74
+2024.03.24-02:06:08.714[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 500 Succ: 276 Fail:150 Unfinished:74
+2024.03.24-02:06:09.018[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ae3
+2024.03.24-02:06:09.018[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:09.019[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ae4
+2024.03.24-02:06:09.019[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:09.019[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ae5
+2024.03.24-02:06:09.019[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.020[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6aeb
+2024.03.24-02:06:11.020[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.021[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ae6
+2024.03.24-02:06:11.021[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.022[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ae7
+2024.03.24-02:06:11.022[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.023[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ae8
+2024.03.24-02:06:11.023[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.023[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6ae9
+2024.03.24-02:06:11.023[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.023[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6aea
+2024.03.24-02:06:11.023[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.023[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6aec
+2024.03.24-02:06:11.024[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.024[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6aed
+2024.03.24-02:06:11.024[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.024[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6aee
+2024.03.24-02:06:11.024[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.024[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6aef
+2024.03.24-02:06:11.024[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.025[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6af0
+2024.03.24-02:06:11.025[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.025[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6af1
+2024.03.24-02:06:11.025[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.025[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6af2
+2024.03.24-02:06:11.025[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.025[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6af3
+2024.03.24-02:06:11.025[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.025[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6af4
+2024.03.24-02:06:11.026[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.026[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6af5
+2024.03.24-02:06:11.026[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.026[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6af6
+2024.03.24-02:06:11.026[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.026[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6af7
+2024.03.24-02:06:11.026[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.026[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6af8
+2024.03.24-02:06:11.026[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.026[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6afb
+2024.03.24-02:06:11.027[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.027[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6afc
+2024.03.24-02:06:11.027[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.027[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6afd
+2024.03.24-02:06:11.027[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.027[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6afe
+2024.03.24-02:06:11.027[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.027[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6aff
+2024.03.24-02:06:11.027[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.028[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b00
+2024.03.24-02:06:11.028[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.028[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b01
+2024.03.24-02:06:11.028[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.029[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b02
+2024.03.24-02:06:11.029[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.029[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b03
+2024.03.24-02:06:11.029[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.029[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b04
+2024.03.24-02:06:11.030[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.030[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b05
+2024.03.24-02:06:11.030[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.030[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b06
+2024.03.24-02:06:11.030[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.030[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b07
+2024.03.24-02:06:11.030[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.030[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b08
+2024.03.24-02:06:11.030[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.030[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b09
+2024.03.24-02:06:11.030[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.032[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b0a
+2024.03.24-02:06:11.032[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.032[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b0b
+2024.03.24-02:06:11.032[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.032[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b0c
+2024.03.24-02:06:11.032[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.032[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b0d
+2024.03.24-02:06:11.032[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.032[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b0e
+2024.03.24-02:06:11.032[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.032[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b0f
+2024.03.24-02:06:11.032[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.032[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b10
+2024.03.24-02:06:11.032[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.032[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b11
+2024.03.24-02:06:11.032[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.032[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b12
+2024.03.24-02:06:11.032[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.032[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b13
+2024.03.24-02:06:11.033[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.033[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b14
+2024.03.24-02:06:11.033[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.033[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b15
+2024.03.24-02:06:11.033[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.033[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b16
+2024.03.24-02:06:11.033[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.033[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b17
+2024.03.24-02:06:11.033[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.033[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b18
+2024.03.24-02:06:11.033[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.033[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b19
+2024.03.24-02:06:11.033[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.034[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b1a
+2024.03.24-02:06:11.034[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.034[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b1b
+2024.03.24-02:06:11.034[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.034[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b1c
+2024.03.24-02:06:11.034[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.034[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b1d
+2024.03.24-02:06:11.034[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.034[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b1e
+2024.03.24-02:06:11.034[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.034[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b1f
+2024.03.24-02:06:11.034[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.034[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b20
+2024.03.24-02:06:11.034[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.034[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b21
+2024.03.24-02:06:11.034[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.035[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b22
+2024.03.24-02:06:11.035[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.035[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b23
+2024.03.24-02:06:11.035[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.035[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b24
+2024.03.24-02:06:11.035[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.035[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b25
+2024.03.24-02:06:11.035[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.035[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b26
+2024.03.24-02:06:11.036[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.036[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b27
+2024.03.24-02:06:11.036[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.036[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b28
+2024.03.24-02:06:11.036[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.036[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b29
+2024.03.24-02:06:11.036[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.036[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b2a
+2024.03.24-02:06:11.036[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.036[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b2b
+2024.03.24-02:06:11.036[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.036[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b2c
+2024.03.24-02:06:11.036[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.036[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b2d
+2024.03.24-02:06:11.036[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:11.036[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x6b2e
+2024.03.24-02:06:11.036[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.03.24-02:06:12.049[32m info [39m [caliper] [worker-message-handler] 	Worker#0 finished Round#0
+2024.03.24-02:06:17.054[32m info [39m [caliper] [default-observer] 	Resetting txCount indicator count
+2024.03.24-02:06:17.055[32m info [39m [caliper] [report-builder] 	### Test result ###
+2024.03.24-02:06:17.059[32m info [39m [caliper] [report-builder] 	
++-----------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name            | Succ | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|-----------------|------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| añadir_paciente | 276  | 224  | 75.2            | 4.42            | 1.38            | 2.93            | 4.7              |
++-----------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2024.03.24-02:06:17.059[32m info [39m [caliper] [round-orchestrator] 	Finished round 1 (añadir_paciente) in 107.339 seconds
+2024.03.24-02:06:17.059[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2024.03.24-02:06:17.059[32m info [39m [caliper] [report-builder] 	### All test results ###
+2024.03.24-02:06:17.060[32m info [39m [caliper] [report-builder] 	
++-----------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name            | Succ | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|-----------------|------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| añadir_paciente | 276  | 224  | 75.2            | 4.42            | 1.38            | 2.93            | 4.7              |
++-----------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2024.03.24-02:06:17.070[32m info [39m [caliper] [report-builder] 	Generated report with path /home/salasalonso/caliper-benchmarks/report.html
+2024.03.24-02:06:17.070[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2024.03.24-02:06:17.070[32m info [39m [caliper] [worker-orchestrator] 	Sending exit message to connected workers
+2024.03.24-02:06:17.070[32m info [39m [caliper] [round-orchestrator] 	Benchmark finished in 113.44 seconds. Total rounds: 1. Successful rounds: 1. Failed rounds: 0.
+2024.03.24-02:06:17.071[32m info [39m [caliper] [caliper-engine] 	Network configuration attribute "caliper.command.end" is not present, skipping end command
+2024.03.24-02:06:17.071[32m info [39m [caliper] [cli-launch-manager] 	Benchmark successfully finished
+2024.03.24-02:06:17.071[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is exiting
