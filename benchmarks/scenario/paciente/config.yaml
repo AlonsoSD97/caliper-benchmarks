@@ -7,7 +7,7 @@ test:
     - label: añadir_paciente
       description: "Benchmark para actualizar datos de un paciente"
       txNumber: 200
-      rateControl:
+      rateControl:  
         type: fixed-rate
         opts:
           tps: 50  
