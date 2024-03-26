@@ -1,0 +1,13 @@
+2024.03.26-02:07:35.640[32m info [39m [caliper] [cli-launch-manager] 	Set workspace path: /home/salasalonso/caliper-benchmarks
+2024.03.26-02:07:35.641[32m info [39m [caliper] [cli-launch-manager] 	Set benchmark configuration path: /home/salasalonso/caliper-benchmarks/benchmarks/scenario/paciente/config.yaml
+2024.03.26-02:07:35.641[32m info [39m [caliper] [cli-launch-manager] 	Set network configuration path: //home/salasalonso/caliper-benchmarks/networks/besu_external/1node-clique/networkconfig.json
+2024.03.26-02:07:35.642[32m info [39m [caliper] [cli-launch-manager] 	Set SUT type: ethereum
+2024.03.26-02:07:36.818[32m info [39m [caliper] [benchmark-validator] 	No observer specified, will default to `none`
+2024.03.26-02:07:36.819[32m info [39m [caliper] [caliper-engine] 	Starting benchmark flow
+2024.03.26-02:07:36.819[32m info [39m [caliper] [caliper-engine] 	Network configuration attribute "caliper.command.start" is not present, skipping start command
+2024.03.26-02:07:36.910[32m info [39m [caliper] [caliper-engine] 	Executed "init" step in 0.069 seconds
+2024.03.26-02:07:36.912[32m info [39m [caliper] [ethereum-connector] 	Creating contracts...
+2024.03.26-02:07:37.627[31m error[39m [caliper] [caliper-engine] 	Error while performing "install" step: Error: Returned error: Transaction gas limit exceeds block gas limit
+2024.03.26-02:07:37.628[32m info [39m [caliper] [caliper-engine] 	Executed "install" step in 0.716 seconds
+2024.03.26-02:07:37.629[32m info [39m [caliper] [caliper-engine] 	Network configuration attribute "caliper.command.end" is not present, skipping end command
+2024.03.26-02:07:37.629[31m error[39m [caliper] [cli-launch-manager] 	Benchmark failed with error code 5
