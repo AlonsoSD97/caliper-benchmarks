@@ -1,0 +1,13 @@
+2024.03.28-18:56:43.360[32m info [39m [caliper] [cli-launch-manager] 	Set workspace path: /home/salasalonso/caliper-benchmarks
+2024.03.28-18:56:43.361[32m info [39m [caliper] [cli-launch-manager] 	Set benchmark configuration path: /home/salasalonso/caliper-benchmarks/benchmarks/scenario/paciente/config.yaml
+2024.03.28-18:56:43.362[32m info [39m [caliper] [cli-launch-manager] 	Set network configuration path: //home/salasalonso/caliper-benchmarks/networks/besu_external/1node-clique/networkconfig.json
+2024.03.28-18:56:43.362[32m info [39m [caliper] [cli-launch-manager] 	Set SUT type: ethereum
+2024.03.28-18:56:43.694[32m info [39m [caliper] [benchmark-validator] 	No observer specified, will default to `none`
+2024.03.28-18:56:43.695[32m info [39m [caliper] [caliper-engine] 	Starting benchmark flow
+2024.03.28-18:56:43.695[32m info [39m [caliper] [caliper-engine] 	Network configuration attribute "caliper.command.start" is not present, skipping start command
+2024.03.28-18:56:43.756[32m info [39m [caliper] [caliper-engine] 	Executed "init" step in 0.045 seconds
+2024.03.28-18:56:43.756[32m info [39m [caliper] [ethereum-connector] 	Creating contracts...
+2024.03.28-18:56:43.813[31m error[39m [caliper] [caliper-engine] 	Error while performing "install" step: Error: connection not open on send()
+2024.03.28-18:56:43.813[32m info [39m [caliper] [caliper-engine] 	Executed "install" step in 0.057 seconds
+2024.03.28-18:56:43.814[32m info [39m [caliper] [caliper-engine] 	Network configuration attribute "caliper.command.end" is not present, skipping end command
+2024.03.28-18:56:43.814[31m error[39m [caliper] [cli-launch-manager] 	Benchmark failed with error code 5
