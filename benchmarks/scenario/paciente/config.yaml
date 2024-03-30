@@ -1,16 +1,15 @@
 test:
   name: promedios
   description: "Benchmark for the promedios smart contract"
-  workers:
-    number: 1
+  workers: 1
   rounds:
     - label: añadir_paciente
       description: "Benchmark para actualizar datos de un paciente"
-      txNumber: 100
+      txNumber: 200
       rateControl:  
         type: fixed-rate
         opts:
-          tps: 75  
+          tps: 100 
       workload:
-        module: benchmarks/scenario/paciente/actualizar_paciente_fijo.js
+        module: benchmarks/scenario/paciente/open_copy.js
         
