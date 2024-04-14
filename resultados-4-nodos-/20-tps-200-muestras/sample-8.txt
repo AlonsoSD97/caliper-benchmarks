@@ -1,0 +1,366 @@
+2024.04.14-03:20:31.534[32m info [39m [caliper] [cli-launch-manager] 	Set workspace path: /home/salasalonso/caliper-benchmarks
+2024.04.14-03:20:31.536[32m info [39m [caliper] [cli-launch-manager] 	Set benchmark configuration path: /home/salasalonso/caliper-benchmarks/benchmarks/scenario/paciente/config.yaml
+2024.04.14-03:20:31.537[32m info [39m [caliper] [cli-launch-manager] 	Set network configuration path: //home/salasalonso/caliper-benchmarks/networks/besu_external/1node-clique/networkconfig.json
+2024.04.14-03:20:31.537[32m info [39m [caliper] [cli-launch-manager] 	Set SUT type: ethereum
+2024.04.14-03:20:31.772[32m info [39m [caliper] [benchmark-validator] 	No observer specified, will default to `none`
+2024.04.14-03:20:31.772[32m info [39m [caliper] [caliper-engine] 	Starting benchmark flow
+2024.04.14-03:20:31.772[32m info [39m [caliper] [caliper-engine] 	Network configuration attribute "caliper.command.start" is not present, skipping start command
+2024.04.14-03:20:31.818[32m info [39m [caliper] [caliper-engine] 	Executed "init" step in 0.033 seconds
+2024.04.14-03:20:31.819[32m info [39m [caliper] [ethereum-connector] 	Creating contracts...
+2024.04.14-03:20:33.039[32m info [39m [caliper] [ethereum-connector] 	Deployed contract undefined at 0xCB152A2Aa90055a0D255cA7dbaeb85eDFdc86096
+2024.04.14-03:20:33.040[32m info [39m [caliper] [caliper-engine] 	Executed "install" step in 1.222 seconds
+2024.04.14-03:20:33.041[32m info [39m [caliper] [monitor.js] 	No resource monitors specified
+2024.04.14-03:20:33.042[32m info [39m [caliper] [default-observer] 	Observer interval set to 5000 milliseconds
+2024.04.14-03:20:33.044[32m info [39m [caliper] [round-orchestrator] 	Preparing worker connections
+2024.04.14-03:20:33.044[32m info [39m [caliper] [worker-orchestrator] 	Launching worker 1 of 1
+2024.04.14-03:20:33.047[32m info [39m [caliper] [worker-orchestrator] 	Messenger not configured, entering configure phase...
+2024.04.14-03:20:33.048[32m info [39m [caliper] [worker-orchestrator] 	No existing workers detected, entering worker launch phase...
+2024.04.14-03:20:33.048[32m info [39m [caliper] [worker-orchestrator] 	Waiting for 1 workers to be connected...
+2024.04.14-03:20:33.273[32m info [39m [caliper] [cli-launch-worker] 	Set workspace path: /home/salasalonso/caliper-benchmarks
+2024.04.14-03:20:33.279[32m info [39m [caliper] [cli-launch-worker] 	Set benchmark configuration path: /home/salasalonso/caliper-benchmarks/benchmarks/scenario/paciente/config.yaml
+2024.04.14-03:20:33.280[32m info [39m [caliper] [cli-launch-worker] 	Set network configuration path: //home/salasalonso/caliper-benchmarks/networks/besu_external/1node-clique/networkconfig.json
+2024.04.14-03:20:33.280[32m info [39m [caliper] [cli-launch-worker] 	Set SUT type: ethereum
+2024.04.14-03:20:33.552[32m info [39m [caliper] [worker-orchestrator] 	1 workers connected, progressing to worker assignment phase.
+2024.04.14-03:20:33.552[32m info [39m [caliper] [worker-orchestrator] 	Workers currently unassigned, awaiting index assignment...
+2024.04.14-03:20:33.552[32m info [39m [caliper] [worker-orchestrator] 	Waiting for 1 workers to be assigned...
+2024.04.14-03:20:33.583[32m info [39m [caliper] [worker-orchestrator] 	1 workers assigned, progressing to worker initialization phase.
+2024.04.14-03:20:33.583[32m info [39m [caliper] [worker-orchestrator] 	Waiting for 1 workers to be ready...
+2024.04.14-03:20:33.588[32m info [39m [caliper] [worker-message-handler] 	Initializing Worker#0...
+2024.04.14-03:20:33.600[32m info [39m [caliper] [worker-message-handler] 	Worker#0 initialized
+2024.04.14-03:20:33.601[32m info [39m [caliper] [worker-orchestrator] 	1 workers ready, progressing to test preparation phase.
+2024.04.14-03:20:33.601[32m info [39m [caliper] [round-orchestrator] 	Started round 1 (añadir_paciente)
+2024.04.14-03:20:33.604[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#0 for Round#0
+2024.04.14-03:20:33.663[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 0 is starting...
+2024.04.14-03:20:33.665[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 0 is completed
+2024.04.14-03:20:33.665[32m info [39m [caliper] [worker-message-handler] 	Worker#0 prepared for Round#0
+2024.04.14-03:20:33.666[32m info [39m [caliper] [worker-orchestrator] 	1 workers prepared, progressing to test phase.
+2024.04.14-03:20:33.666[32m info [39m [caliper] [round-orchestrator] 	Monitors successfully started
+2024.04.14-03:20:33.668[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is starting Round#0
+2024.04.14-03:20:33.679[32m info [39m [caliper] [caliper-worker] 	Worker #0 starting workload loop
+2024.04.14-03:20:36.553[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dc1
+2024.04.14-03:20:36.553[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:36.637[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dc2
+2024.04.14-03:20:36.637[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:36.639[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dc3
+2024.04.14-03:20:36.639[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:36.689[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dc4
+2024.04.14-03:20:36.689[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:36.740[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dc5
+2024.04.14-03:20:36.741[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:36.790[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dc6
+2024.04.14-03:20:36.790[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:36.840[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dc7
+2024.04.14-03:20:36.840[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:36.890[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dc8
+2024.04.14-03:20:36.891[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:36.939[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dc9
+2024.04.14-03:20:36.939[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:36.991[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dca
+2024.04.14-03:20:36.992[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:37.040[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dcb
+2024.04.14-03:20:37.040[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:37.090[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dcc
+2024.04.14-03:20:37.090[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:37.140[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dcd
+2024.04.14-03:20:37.140[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:37.190[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dce
+2024.04.14-03:20:37.191[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:37.240[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dcf
+2024.04.14-03:20:37.241[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:37.291[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dd0
+2024.04.14-03:20:37.291[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:37.340[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dd1
+2024.04.14-03:20:37.340[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:37.390[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dd2
+2024.04.14-03:20:37.390[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:37.440[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dd3
+2024.04.14-03:20:37.440[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:37.491[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dd4
+2024.04.14-03:20:37.491[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:37.540[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dd5
+2024.04.14-03:20:37.540[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:37.590[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dd6
+2024.04.14-03:20:37.590[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:37.639[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dd7
+2024.04.14-03:20:37.639[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:37.692[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dd8
+2024.04.14-03:20:37.692[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:37.741[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dd9
+2024.04.14-03:20:37.741[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:37.790[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dda
+2024.04.14-03:20:37.790[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:37.840[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2ddb
+2024.04.14-03:20:37.840[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:37.890[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2ddc
+2024.04.14-03:20:37.890[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:37.939[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2ddd
+2024.04.14-03:20:37.940[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:37.990[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dde
+2024.04.14-03:20:37.990[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:38.039[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2ddf
+2024.04.14-03:20:38.039[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:38.090[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2de0
+2024.04.14-03:20:38.090[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:38.140[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2de1
+2024.04.14-03:20:38.140[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:38.190[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2de2
+2024.04.14-03:20:38.190[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:38.241[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2de3
+2024.04.14-03:20:38.241[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:38.290[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2de4
+2024.04.14-03:20:38.290[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:38.340[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2de5
+2024.04.14-03:20:38.340[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:38.391[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2de6
+2024.04.14-03:20:38.391[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:38.440[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2de7
+2024.04.14-03:20:38.440[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:38.491[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2de8
+2024.04.14-03:20:38.491[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:38.541[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2de9
+2024.04.14-03:20:38.541[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:38.590[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dea
+2024.04.14-03:20:38.590[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:38.640[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2deb
+2024.04.14-03:20:38.640[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:38.680[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 81 Succ: 27 Fail:23 Unfinished:31
+2024.04.14-03:20:38.690[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dec
+2024.04.14-03:20:38.691[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:38.740[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2ded
+2024.04.14-03:20:38.740[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:38.789[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dee
+2024.04.14-03:20:38.790[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:38.840[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2def
+2024.04.14-03:20:38.840[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:38.889[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2df0
+2024.04.14-03:20:38.889[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:38.941[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2df1
+2024.04.14-03:20:38.942[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:38.990[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2df2
+2024.04.14-03:20:38.991[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:39.040[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2df3
+2024.04.14-03:20:39.040[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:39.090[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2df4
+2024.04.14-03:20:39.090[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:39.141[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2df5
+2024.04.14-03:20:39.141[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:39.189[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2df6
+2024.04.14-03:20:39.190[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:39.239[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2df7
+2024.04.14-03:20:39.239[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:39.291[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2df8
+2024.04.14-03:20:39.291[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:39.342[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2df9
+2024.04.14-03:20:39.342[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:39.389[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dfa
+2024.04.14-03:20:39.390[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:39.439[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dfb
+2024.04.14-03:20:39.440[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:39.489[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dfc
+2024.04.14-03:20:39.489[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:39.540[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dfd
+2024.04.14-03:20:39.540[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:39.590[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dfe
+2024.04.14-03:20:39.590[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:39.640[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dff
+2024.04.14-03:20:39.640[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:39.691[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e00
+2024.04.14-03:20:39.691[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:39.740[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e01
+2024.04.14-03:20:39.740[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:39.794[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e02
+2024.04.14-03:20:39.794[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:39.840[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e03
+2024.04.14-03:20:39.840[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:39.891[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e04
+2024.04.14-03:20:39.891[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:39.950[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e05
+2024.04.14-03:20:39.950[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:39.990[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e06
+2024.04.14-03:20:39.990[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:40.041[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e07
+2024.04.14-03:20:40.041[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:40.090[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e08
+2024.04.14-03:20:40.090[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:40.140[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e09
+2024.04.14-03:20:40.140[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:40.190[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e0a
+2024.04.14-03:20:40.190[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:40.240[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e0b
+2024.04.14-03:20:40.240[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:40.291[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e0c
+2024.04.14-03:20:40.291[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:40.340[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e0d
+2024.04.14-03:20:40.340[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:40.390[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e0e
+2024.04.14-03:20:40.390[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:40.440[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e0f
+2024.04.14-03:20:40.440[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:40.490[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e10
+2024.04.14-03:20:40.490[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:40.540[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e11
+2024.04.14-03:20:40.540[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:40.590[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e12
+2024.04.14-03:20:40.590[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:40.640[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e13
+2024.04.14-03:20:40.640[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:40.690[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e14
+2024.04.14-03:20:40.690[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:40.740[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e15
+2024.04.14-03:20:40.740[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:40.790[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e16
+2024.04.14-03:20:40.791[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:40.839[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e17
+2024.04.14-03:20:40.839[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:40.890[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e18
+2024.04.14-03:20:40.890[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:40.939[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e19
+2024.04.14-03:20:40.939[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:40.990[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e1a
+2024.04.14-03:20:40.990[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:41.040[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e1b
+2024.04.14-03:20:41.040[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:41.090[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e1c
+2024.04.14-03:20:41.090[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:41.140[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e1d
+2024.04.14-03:20:41.141[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:41.189[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e1e
+2024.04.14-03:20:41.190[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:41.238[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e1f
+2024.04.14-03:20:41.238[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:41.291[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e20
+2024.04.14-03:20:41.292[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:41.339[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e21
+2024.04.14-03:20:41.339[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:41.390[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e22
+2024.04.14-03:20:41.391[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:41.440[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e23
+2024.04.14-03:20:41.440[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:41.490[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e24
+2024.04.14-03:20:41.490[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:41.540[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e25
+2024.04.14-03:20:41.540[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:41.591[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e26
+2024.04.14-03:20:41.591[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:41.640[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e27
+2024.04.14-03:20:41.640[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:41.691[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e28
+2024.04.14-03:20:41.691[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:41.739[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e29
+2024.04.14-03:20:41.740[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:41.789[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e2a
+2024.04.14-03:20:41.789[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:41.840[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e2b
+2024.04.14-03:20:41.840[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:41.890[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e2c
+2024.04.14-03:20:41.890[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:41.941[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e2d
+2024.04.14-03:20:41.941[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:41.990[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e2e
+2024.04.14-03:20:41.990[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Nonce too low
+2024.04.14-03:20:43.669[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 181 Succ: 27 Fail:110 Unfinished:44
+2024.04.14-03:20:48.670[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 60 Fail:110 Unfinished:30
+2024.04.14-03:20:53.670[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 60 Fail:110 Unfinished:30
+2024.04.14-03:20:58.672[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 60 Fail:110 Unfinished:30
+2024.04.14-03:21:03.672[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 60 Fail:110 Unfinished:30
+2024.04.14-03:21:08.674[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 60 Fail:110 Unfinished:30
+2024.04.14-03:21:13.674[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 60 Fail:110 Unfinished:30
+2024.04.14-03:21:18.675[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 60 Fail:110 Unfinished:30
+2024.04.14-03:21:23.676[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 60 Fail:110 Unfinished:30
+2024.04.14-03:21:28.677[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 60 Fail:110 Unfinished:30
+2024.04.14-03:21:33.678[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 60 Fail:110 Unfinished:30
+2024.04.14-03:21:38.680[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 60 Fail:110 Unfinished:30
+2024.04.14-03:21:43.682[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 60 Fail:110 Unfinished:30
+2024.04.14-03:21:48.683[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 60 Fail:110 Unfinished:30
+2024.04.14-03:21:53.683[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 60 Fail:110 Unfinished:30
+2024.04.14-03:21:58.684[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 60 Fail:110 Unfinished:30
+2024.04.14-03:22:03.685[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 60 Fail:110 Unfinished:30
+2024.04.14-03:22:08.686[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 60 Fail:110 Unfinished:30
+2024.04.14-03:22:13.687[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 60 Fail:110 Unfinished:30
+2024.04.14-03:22:15.016[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2daf
+2024.04.14-03:22:15.016[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.14-03:22:15.016[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2db0
+2024.04.14-03:22:15.016[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.14-03:22:15.017[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2db1
+2024.04.14-03:22:15.017[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.14-03:22:15.017[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2db2
+2024.04.14-03:22:15.018[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.14-03:22:15.018[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2db3
+2024.04.14-03:22:15.018[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.14-03:22:15.018[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2db4
+2024.04.14-03:22:15.018[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.14-03:22:15.018[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2db5
+2024.04.14-03:22:15.018[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.14-03:22:15.019[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2db6
+2024.04.14-03:22:15.019[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.14-03:22:15.019[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2db7
+2024.04.14-03:22:15.019[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.14-03:22:15.019[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2db8
+2024.04.14-03:22:15.019[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.14-03:22:15.019[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2db9
+2024.04.14-03:22:15.019[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.14-03:22:15.019[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dba
+2024.04.14-03:22:15.019[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.14-03:22:15.019[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dbb
+2024.04.14-03:22:15.019[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.14-03:22:15.019[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dbc
+2024.04.14-03:22:15.019[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.14-03:22:15.019[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dbd
+2024.04.14-03:22:15.019[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.14-03:22:15.019[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dbe
+2024.04.14-03:22:15.020[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.14-03:22:15.020[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dbf
+2024.04.14-03:22:15.020[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.14-03:22:15.020[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dc0
+2024.04.14-03:22:15.020[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.14-03:22:15.020[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2da3
+2024.04.14-03:22:15.020[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.14-03:22:15.020[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2da4
+2024.04.14-03:22:15.020[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.14-03:22:15.021[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2da5
+2024.04.14-03:22:15.021[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.14-03:22:15.021[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2da6
+2024.04.14-03:22:15.021[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.14-03:22:15.021[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2da7
+2024.04.14-03:22:15.021[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.14-03:22:15.021[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2da8
+2024.04.14-03:22:15.021[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.14-03:22:15.021[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2da9
+2024.04.14-03:22:15.021[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.14-03:22:15.021[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2daa
+2024.04.14-03:22:15.021[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.14-03:22:15.021[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dab
+2024.04.14-03:22:15.021[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.14-03:22:15.021[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dac
+2024.04.14-03:22:15.021[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.14-03:22:15.021[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dad
+2024.04.14-03:22:15.021[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.14-03:22:15.021[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dae
+2024.04.14-03:22:15.022[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.14-03:22:16.048[32m info [39m [caliper] [worker-message-handler] 	Worker#0 finished Round#0
+2024.04.14-03:22:21.051[32m info [39m [caliper] [default-observer] 	Resetting txCount indicator count
+2024.04.14-03:22:21.052[32m info [39m [caliper] [report-builder] 	### Test result ###
+2024.04.14-03:22:21.055[32m info [39m [caliper] [report-builder] 	
++-----------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name            | Succ | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|-----------------|------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| añadir_paciente | 60   | 140  | 20.1            | 2.88            | 0.26            | 1.66            | 2.0              |
++-----------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2024.04.14-03:22:21.055[32m info [39m [caliper] [round-orchestrator] 	Finished round 1 (añadir_paciente) in 101.367 seconds
+2024.04.14-03:22:21.055[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2024.04.14-03:22:21.055[32m info [39m [caliper] [report-builder] 	### All test results ###
+2024.04.14-03:22:21.056[32m info [39m [caliper] [report-builder] 	
++-----------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name            | Succ | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|-----------------|------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| añadir_paciente | 60   | 140  | 20.1            | 2.88            | 0.26            | 1.66            | 2.0              |
++-----------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2024.04.14-03:22:21.063[32m info [39m [caliper] [report-builder] 	Generated report with path /home/salasalonso/caliper-benchmarks/report.html
+2024.04.14-03:22:21.063[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2024.04.14-03:22:21.063[32m info [39m [caliper] [worker-orchestrator] 	Sending exit message to connected workers
+2024.04.14-03:22:21.063[32m info [39m [caliper] [round-orchestrator] 	Benchmark finished in 107.462 seconds. Total rounds: 1. Successful rounds: 1. Failed rounds: 0.
+2024.04.14-03:22:21.063[32m info [39m [caliper] [caliper-engine] 	Network configuration attribute "caliper.command.end" is not present, skipping end command
+2024.04.14-03:22:21.063[32m info [39m [caliper] [cli-launch-manager] 	Benchmark successfully finished
+2024.04.14-03:22:21.064[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is exiting
