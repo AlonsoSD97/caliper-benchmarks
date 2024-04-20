@@ -9,7 +9,7 @@ test:
       rateControl: 
         type: fixed-rate
         opts:
-          tps: 100
+          tps: 200
       workload:
         module: benchmarks/scenario/paciente/actualizar_paciente_fijo.js
         

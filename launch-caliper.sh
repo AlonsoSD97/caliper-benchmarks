@@ -14,7 +14,7 @@ do
     npx caliper launch manager \
     --caliper-benchconfig /home/salasalonso/caliper-benchmarks/benchmarks/scenario/paciente/config.yaml \
     --caliper-networkconfig //home/salasalonso/caliper-benchmarks/networks/besu_external/1node-clique/networkconfig.json\
-    | tee output.txt
+    > output.txt 2>&1
 
     # Export the HTM4L document with the name sample-n
     mkdir -p "$output_dir"
