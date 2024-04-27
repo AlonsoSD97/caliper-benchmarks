@@ -5,7 +5,7 @@ test:
   rounds:
     - label: añadir_paciente
       description: "Benchmark para actualizar datos de un paciente"
-      txNumber: 200
+      txNumber: 500
       rateControl: 
         type: fixed-rate
         opts:
