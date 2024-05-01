@@ -1,0 +1,244 @@
+2024.04.30-18:25:27.819[32m info [39m [caliper] [cli-launch-manager] 	Set workspace path: /home/salasalonso/caliper-benchmarks
+2024.04.30-18:25:27.820[32m info [39m [caliper] [cli-launch-manager] 	Set benchmark configuration path: /home/salasalonso/caliper-benchmarks/benchmarks/scenario/paciente/config.yaml
+2024.04.30-18:25:27.820[32m info [39m [caliper] [cli-launch-manager] 	Set network configuration path: //home/salasalonso/caliper-benchmarks/networks/besu_external/1node-clique/networkconfig.json
+2024.04.30-18:25:27.820[32m info [39m [caliper] [cli-launch-manager] 	Set SUT type: ethereum
+2024.04.30-18:25:28.084[32m info [39m [caliper] [benchmark-validator] 	No observer specified, will default to `none`
+2024.04.30-18:25:28.084[32m info [39m [caliper] [caliper-engine] 	Starting benchmark flow
+2024.04.30-18:25:28.084[32m info [39m [caliper] [caliper-engine] 	Network configuration attribute "caliper.command.start" is not present, skipping start command
+2024.04.30-18:25:28.131[32m info [39m [caliper] [caliper-engine] 	Executed "init" step in 0.032 seconds
+2024.04.30-18:25:28.131[32m info [39m [caliper] [ethereum-connector] 	Creating contracts...
+2024.04.30-18:25:29.292[32m info [39m [caliper] [ethereum-connector] 	Deployed contract undefined at 0xf25186B5081Ff5cE73482AD761DB0eB0d25abfBF
+2024.04.30-18:25:29.292[32m info [39m [caliper] [caliper-engine] 	Executed "install" step in 1.161 seconds
+2024.04.30-18:25:29.294[32m info [39m [caliper] [monitor.js] 	No resource monitors specified
+2024.04.30-18:25:29.295[32m info [39m [caliper] [default-observer] 	Observer interval set to 5000 milliseconds
+2024.04.30-18:25:29.297[32m info [39m [caliper] [round-orchestrator] 	Preparing worker connections
+2024.04.30-18:25:29.297[32m info [39m [caliper] [worker-orchestrator] 	Launching worker 1 of 1
+2024.04.30-18:25:29.300[32m info [39m [caliper] [worker-orchestrator] 	Messenger not configured, entering configure phase...
+2024.04.30-18:25:29.301[32m info [39m [caliper] [worker-orchestrator] 	No existing workers detected, entering worker launch phase...
+2024.04.30-18:25:29.301[32m info [39m [caliper] [worker-orchestrator] 	Waiting for 1 workers to be connected...
+2024.04.30-18:25:29.528[32m info [39m [caliper] [cli-launch-worker] 	Set workspace path: /home/salasalonso/caliper-benchmarks
+2024.04.30-18:25:29.529[32m info [39m [caliper] [cli-launch-worker] 	Set benchmark configuration path: /home/salasalonso/caliper-benchmarks/benchmarks/scenario/paciente/config.yaml
+2024.04.30-18:25:29.529[32m info [39m [caliper] [cli-launch-worker] 	Set network configuration path: //home/salasalonso/caliper-benchmarks/networks/besu_external/1node-clique/networkconfig.json
+2024.04.30-18:25:29.529[32m info [39m [caliper] [cli-launch-worker] 	Set SUT type: ethereum
+2024.04.30-18:25:29.825[32m info [39m [caliper] [worker-orchestrator] 	1 workers connected, progressing to worker assignment phase.
+2024.04.30-18:25:29.826[32m info [39m [caliper] [worker-orchestrator] 	Workers currently unassigned, awaiting index assignment...
+2024.04.30-18:25:29.826[32m info [39m [caliper] [worker-orchestrator] 	Waiting for 1 workers to be assigned...
+2024.04.30-18:25:29.864[32m info [39m [caliper] [worker-orchestrator] 	1 workers assigned, progressing to worker initialization phase.
+2024.04.30-18:25:29.864[32m info [39m [caliper] [worker-orchestrator] 	Waiting for 1 workers to be ready...
+2024.04.30-18:25:29.865[32m info [39m [caliper] [worker-message-handler] 	Initializing Worker#0...
+2024.04.30-18:25:29.874[32m info [39m [caliper] [worker-message-handler] 	Worker#0 initialized
+2024.04.30-18:25:29.874[32m info [39m [caliper] [worker-orchestrator] 	1 workers ready, progressing to test preparation phase.
+2024.04.30-18:25:29.875[32m info [39m [caliper] [round-orchestrator] 	Started round 1 (añadir_paciente)
+2024.04.30-18:25:29.886[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#0 for Round#0
+2024.04.30-18:25:30.249[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 0 is starting...
+2024.04.30-18:25:30.255[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 0 is completed
+2024.04.30-18:25:30.255[32m info [39m [caliper] [worker-message-handler] 	Worker#0 prepared for Round#0
+2024.04.30-18:25:30.256[32m info [39m [caliper] [worker-orchestrator] 	1 workers prepared, progressing to test phase.
+2024.04.30-18:25:30.256[32m info [39m [caliper] [round-orchestrator] 	Monitors successfully started
+2024.04.30-18:25:30.257[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is starting Round#0
+2024.04.30-18:25:30.370[32m info [39m [caliper] [caliper-worker] 	Worker #0 starting workload loop
+2024.04.30-18:25:31.741[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2b9
+2024.04.30-18:25:31.742[31m error[39m [caliper] [ethereum-connector] 	Error: Returned error: Internal error
+2024.04.30-18:25:35.265[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 42 Fail:1 Unfinished:157
+2024.04.30-18:25:40.258[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 42 Fail:1 Unfinished:157
+2024.04.30-18:25:45.259[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 42 Fail:1 Unfinished:157
+2024.04.30-18:25:50.259[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 42 Fail:1 Unfinished:157
+2024.04.30-18:25:55.260[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 78 Fail:1 Unfinished:121
+2024.04.30-18:26:00.262[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 78 Fail:1 Unfinished:121
+2024.04.30-18:26:05.263[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 121 Fail:1 Unfinished:78
+2024.04.30-18:26:10.263[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 121 Fail:1 Unfinished:78
+2024.04.30-18:26:15.264[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 121 Fail:1 Unfinished:78
+2024.04.30-18:26:20.265[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 121 Fail:1 Unfinished:78
+2024.04.30-18:26:25.267[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 121 Fail:1 Unfinished:78
+2024.04.30-18:26:30.267[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 121 Fail:1 Unfinished:78
+2024.04.30-18:26:35.269[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 121 Fail:1 Unfinished:78
+2024.04.30-18:26:40.269[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 121 Fail:1 Unfinished:78
+2024.04.30-18:26:45.270[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 121 Fail:1 Unfinished:78
+2024.04.30-18:26:50.271[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 121 Fail:1 Unfinished:78
+2024.04.30-18:26:55.272[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 121 Fail:1 Unfinished:78
+2024.04.30-18:27:00.273[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 121 Fail:1 Unfinished:78
+2024.04.30-18:27:05.274[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 121 Fail:1 Unfinished:78
+2024.04.30-18:27:10.275[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 121 Fail:1 Unfinished:78
+2024.04.30-18:27:13.213[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2ba
+2024.04.30-18:27:13.213[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.213[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2bb
+2024.04.30-18:27:13.213[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.213[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2bc
+2024.04.30-18:27:13.214[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.214[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2bd
+2024.04.30-18:27:13.214[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.214[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2be
+2024.04.30-18:27:13.214[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.214[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2bf
+2024.04.30-18:27:13.214[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.214[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2c0
+2024.04.30-18:27:13.214[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.214[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2c1
+2024.04.30-18:27:13.214[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.214[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2c2
+2024.04.30-18:27:13.214[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.215[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2c3
+2024.04.30-18:27:13.215[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.215[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2c4
+2024.04.30-18:27:13.215[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.215[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2c5
+2024.04.30-18:27:13.215[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.215[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2c6
+2024.04.30-18:27:13.215[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.216[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2c7
+2024.04.30-18:27:13.216[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.216[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2c8
+2024.04.30-18:27:13.216[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.216[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2c9
+2024.04.30-18:27:13.216[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.216[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2ca
+2024.04.30-18:27:13.216[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.216[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2cb
+2024.04.30-18:27:13.216[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.216[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2cc
+2024.04.30-18:27:13.216[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.216[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2cd
+2024.04.30-18:27:13.216[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.216[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2ce
+2024.04.30-18:27:13.216[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.216[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2cf
+2024.04.30-18:27:13.217[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.217[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2d0
+2024.04.30-18:27:13.217[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.217[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2d1
+2024.04.30-18:27:13.217[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.217[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2d2
+2024.04.30-18:27:13.217[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.217[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2d3
+2024.04.30-18:27:13.217[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.217[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2d4
+2024.04.30-18:27:13.217[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.217[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2d5
+2024.04.30-18:27:13.217[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.217[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2d6
+2024.04.30-18:27:13.217[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.218[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2d7
+2024.04.30-18:27:13.218[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.218[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2d8
+2024.04.30-18:27:13.218[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.218[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2d9
+2024.04.30-18:27:13.218[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.218[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2da
+2024.04.30-18:27:13.218[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.218[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2db
+2024.04.30-18:27:13.218[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.218[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dc
+2024.04.30-18:27:13.218[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.219[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2dd
+2024.04.30-18:27:13.219[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.219[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2de
+2024.04.30-18:27:13.219[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.219[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2df
+2024.04.30-18:27:13.219[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.219[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e0
+2024.04.30-18:27:13.219[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.219[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e1
+2024.04.30-18:27:13.219[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.219[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e2
+2024.04.30-18:27:13.219[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.219[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e3
+2024.04.30-18:27:13.219[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.219[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e4
+2024.04.30-18:27:13.220[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.220[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e5
+2024.04.30-18:27:13.220[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.220[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e6
+2024.04.30-18:27:13.220[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.220[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e7
+2024.04.30-18:27:13.220[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.220[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e8
+2024.04.30-18:27:13.220[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.220[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2e9
+2024.04.30-18:27:13.220[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.244[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2ea
+2024.04.30-18:27:13.244[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.244[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2eb
+2024.04.30-18:27:13.244[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.244[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2ec
+2024.04.30-18:27:13.244[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.244[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2ed
+2024.04.30-18:27:13.244[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.244[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2ee
+2024.04.30-18:27:13.244[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.244[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2ef
+2024.04.30-18:27:13.245[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.245[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2f0
+2024.04.30-18:27:13.245[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.245[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2f1
+2024.04.30-18:27:13.245[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.245[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2f2
+2024.04.30-18:27:13.245[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.245[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2f3
+2024.04.30-18:27:13.245[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.245[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2f4
+2024.04.30-18:27:13.245[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.245[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2f5
+2024.04.30-18:27:13.245[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.245[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2f6
+2024.04.30-18:27:13.245[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.246[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2f7
+2024.04.30-18:27:13.246[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.246[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2f8
+2024.04.30-18:27:13.246[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.247[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2f9
+2024.04.30-18:27:13.247[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.248[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2fa
+2024.04.30-18:27:13.248[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.248[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2fb
+2024.04.30-18:27:13.248[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.248[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2fc
+2024.04.30-18:27:13.248[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.248[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2fd
+2024.04.30-18:27:13.248[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.248[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2fe
+2024.04.30-18:27:13.248[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.248[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x2ff
+2024.04.30-18:27:13.248[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.248[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x300
+2024.04.30-18:27:13.248[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.248[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x301
+2024.04.30-18:27:13.248[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.249[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x302
+2024.04.30-18:27:13.249[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.249[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x303
+2024.04.30-18:27:13.249[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.249[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x304
+2024.04.30-18:27:13.249[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.250[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x305
+2024.04.30-18:27:13.250[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.250[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x306
+2024.04.30-18:27:13.250[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:13.250[31m error[39m [caliper] [ethereum-connector] 	Failed tx on paciente calling method updatePatientData nonce 0x307
+2024.04.30-18:27:13.251[31m error[39m [caliper] [ethereum-connector] 	Error: Transaction was not mined within 50 blocks, please make sure your transaction was properly sent. Be aware that it might still be mined!
+2024.04.30-18:27:14.253[32m info [39m [caliper] [worker-message-handler] 	Worker#0 finished Round#0
+2024.04.30-18:27:19.258[32m info [39m [caliper] [default-observer] 	Resetting txCount indicator count
+2024.04.30-18:27:19.259[32m info [39m [caliper] [report-builder] 	### Test result ###
+2024.04.30-18:27:19.262[32m info [39m [caliper] [report-builder] 	
++-----------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name            | Succ | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|-----------------|------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| añadir_paciente | 121  | 79   | 99.0            | 32.33           | 1.01            | 17.37           | 1.9              |
++-----------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2024.04.30-18:27:19.263[32m info [39m [caliper] [round-orchestrator] 	Finished round 1 (añadir_paciente) in 102.882 seconds
+2024.04.30-18:27:19.263[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2024.04.30-18:27:19.263[32m info [39m [caliper] [report-builder] 	### All test results ###
+2024.04.30-18:27:19.264[32m info [39m [caliper] [report-builder] 	
++-----------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name            | Succ | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|-----------------|------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| añadir_paciente | 121  | 79   | 99.0            | 32.33           | 1.01            | 17.37           | 1.9              |
++-----------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2024.04.30-18:27:19.271[32m info [39m [caliper] [report-builder] 	Generated report with path /home/salasalonso/caliper-benchmarks/report.html
+2024.04.30-18:27:19.272[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2024.04.30-18:27:19.272[32m info [39m [caliper] [worker-orchestrator] 	Sending exit message to connected workers
+2024.04.30-18:27:19.272[32m info [39m [caliper] [round-orchestrator] 	Benchmark finished in 109.397 seconds. Total rounds: 1. Successful rounds: 1. Failed rounds: 0.
+2024.04.30-18:27:19.272[32m info [39m [caliper] [caliper-engine] 	Network configuration attribute "caliper.command.end" is not present, skipping end command
+2024.04.30-18:27:19.272[32m info [39m [caliper] [cli-launch-manager] 	Benchmark successfully finished
+2024.04.30-18:27:19.273[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is exiting
