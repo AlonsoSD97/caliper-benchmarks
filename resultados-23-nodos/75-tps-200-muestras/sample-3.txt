@@ -1,0 +1,71 @@
+2024.05.01-03:19:19.717[32m info [39m [caliper] [cli-launch-manager] 	Set workspace path: /home/salasalonso/caliper-benchmarks
+2024.05.01-03:19:19.718[32m info [39m [caliper] [cli-launch-manager] 	Set benchmark configuration path: /home/salasalonso/caliper-benchmarks/benchmarks/scenario/paciente/config.yaml
+2024.05.01-03:19:19.718[32m info [39m [caliper] [cli-launch-manager] 	Set network configuration path: //home/salasalonso/caliper-benchmarks/networks/besu_external/1node-clique/networkconfig.json
+2024.05.01-03:19:19.719[32m info [39m [caliper] [cli-launch-manager] 	Set SUT type: ethereum
+2024.05.01-03:19:19.985[32m info [39m [caliper] [benchmark-validator] 	No observer specified, will default to `none`
+2024.05.01-03:19:19.985[32m info [39m [caliper] [caliper-engine] 	Starting benchmark flow
+2024.05.01-03:19:19.986[32m info [39m [caliper] [caliper-engine] 	Network configuration attribute "caliper.command.start" is not present, skipping start command
+2024.05.01-03:19:20.035[32m info [39m [caliper] [caliper-engine] 	Executed "init" step in 0.035 seconds
+2024.05.01-03:19:20.035[32m info [39m [caliper] [ethereum-connector] 	Creating contracts...
+2024.05.01-03:19:21.200[32m info [39m [caliper] [ethereum-connector] 	Deployed contract undefined at 0xd54b47F8e6A1b97F3A84f63c867286272b273b7C
+2024.05.01-03:19:21.201[32m info [39m [caliper] [caliper-engine] 	Executed "install" step in 1.166 seconds
+2024.05.01-03:19:21.202[32m info [39m [caliper] [monitor.js] 	No resource monitors specified
+2024.05.01-03:19:21.203[32m info [39m [caliper] [default-observer] 	Observer interval set to 5000 milliseconds
+2024.05.01-03:19:21.205[32m info [39m [caliper] [round-orchestrator] 	Preparing worker connections
+2024.05.01-03:19:21.206[32m info [39m [caliper] [worker-orchestrator] 	Launching worker 1 of 1
+2024.05.01-03:19:21.208[32m info [39m [caliper] [worker-orchestrator] 	Messenger not configured, entering configure phase...
+2024.05.01-03:19:21.209[32m info [39m [caliper] [worker-orchestrator] 	No existing workers detected, entering worker launch phase...
+2024.05.01-03:19:21.209[32m info [39m [caliper] [worker-orchestrator] 	Waiting for 1 workers to be connected...
+2024.05.01-03:19:21.429[32m info [39m [caliper] [cli-launch-worker] 	Set workspace path: /home/salasalonso/caliper-benchmarks
+2024.05.01-03:19:21.429[32m info [39m [caliper] [cli-launch-worker] 	Set benchmark configuration path: /home/salasalonso/caliper-benchmarks/benchmarks/scenario/paciente/config.yaml
+2024.05.01-03:19:21.430[32m info [39m [caliper] [cli-launch-worker] 	Set network configuration path: //home/salasalonso/caliper-benchmarks/networks/besu_external/1node-clique/networkconfig.json
+2024.05.01-03:19:21.430[32m info [39m [caliper] [cli-launch-worker] 	Set SUT type: ethereum
+2024.05.01-03:19:21.731[32m info [39m [caliper] [worker-orchestrator] 	1 workers connected, progressing to worker assignment phase.
+2024.05.01-03:19:21.731[32m info [39m [caliper] [worker-orchestrator] 	Workers currently unassigned, awaiting index assignment...
+2024.05.01-03:19:21.731[32m info [39m [caliper] [worker-orchestrator] 	Waiting for 1 workers to be assigned...
+2024.05.01-03:19:21.767[32m info [39m [caliper] [worker-orchestrator] 	1 workers assigned, progressing to worker initialization phase.
+2024.05.01-03:19:21.767[32m info [39m [caliper] [worker-orchestrator] 	Waiting for 1 workers to be ready...
+2024.05.01-03:19:21.773[32m info [39m [caliper] [worker-message-handler] 	Initializing Worker#0...
+2024.05.01-03:19:21.783[32m info [39m [caliper] [worker-message-handler] 	Worker#0 initialized
+2024.05.01-03:19:21.784[32m info [39m [caliper] [worker-orchestrator] 	1 workers ready, progressing to test preparation phase.
+2024.05.01-03:19:21.784[32m info [39m [caliper] [round-orchestrator] 	Started round 1 (añadir_paciente)
+2024.05.01-03:19:21.786[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#0 for Round#0
+2024.05.01-03:19:22.069[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 0 is starting...
+2024.05.01-03:19:22.076[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 0 is completed
+2024.05.01-03:19:22.076[32m info [39m [caliper] [worker-message-handler] 	Worker#0 prepared for Round#0
+2024.05.01-03:19:22.076[32m info [39m [caliper] [worker-orchestrator] 	1 workers prepared, progressing to test phase.
+2024.05.01-03:19:22.077[32m info [39m [caliper] [round-orchestrator] 	Monitors successfully started
+2024.05.01-03:19:22.078[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is starting Round#0
+2024.05.01-03:19:22.099[32m info [39m [caliper] [caliper-worker] 	Worker #0 starting workload loop
+2024.05.01-03:19:27.089[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 2 Fail:0 Unfinished:198
+2024.05.01-03:19:32.081[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 6 Fail:0 Unfinished:194
+2024.05.01-03:19:37.081[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 16 Fail:0 Unfinished:184
+2024.05.01-03:19:42.082[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 16 Fail:0 Unfinished:184
+2024.05.01-03:19:47.083[32m info [39m [caliper] [default-observer] 	[añadir_paciente Round 0 Transaction Info] - Submitted: 200 Succ: 16 Fail:0 Unfinished:184
+2024.05.01-03:19:49.313[32m info [39m [caliper] [worker-message-handler] 	Worker#0 finished Round#0
+2024.05.01-03:19:54.318[32m info [39m [caliper] [default-observer] 	Resetting txCount indicator count
+2024.05.01-03:19:54.319[32m info [39m [caliper] [report-builder] 	### Test result ###
+2024.05.01-03:19:54.322[32m info [39m [caliper] [report-builder] 	
++-----------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name            | Succ | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|-----------------|------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| añadir_paciente | 200  | 0    | 75.4            | 25.58           | 1.16            | 23.26           | 7.6              |
++-----------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2024.05.01-03:19:54.323[32m info [39m [caliper] [round-orchestrator] 	Finished round 1 (añadir_paciente) in 26.213 seconds
+2024.05.01-03:19:54.323[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2024.05.01-03:19:54.323[32m info [39m [caliper] [report-builder] 	### All test results ###
+2024.05.01-03:19:54.323[32m info [39m [caliper] [report-builder] 	
++-----------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name            | Succ | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|-----------------|------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| añadir_paciente | 200  | 0    | 75.4            | 25.58           | 1.16            | 23.26           | 7.6              |
++-----------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2024.05.01-03:19:54.331[32m info [39m [caliper] [report-builder] 	Generated report with path /home/salasalonso/caliper-benchmarks/report.html
+2024.05.01-03:19:54.331[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2024.05.01-03:19:54.331[32m info [39m [caliper] [worker-orchestrator] 	Sending exit message to connected workers
+2024.05.01-03:19:54.331[32m info [39m [caliper] [round-orchestrator] 	Benchmark finished in 32.547 seconds. Total rounds: 1. Successful rounds: 1. Failed rounds: 0.
+2024.05.01-03:19:54.331[32m info [39m [caliper] [caliper-engine] 	Network configuration attribute "caliper.command.end" is not present, skipping end command
+2024.05.01-03:19:54.331[32m info [39m [caliper] [cli-launch-manager] 	Benchmark successfully finished
+2024.05.01-03:19:54.332[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is exiting
